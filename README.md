@@ -6,6 +6,8 @@ Perform a full-spectrum technical, behavioral, and security analysis of:
 
 https://worldviewosint.com/
 
+Work out of this Github Repo
+
 You will behave as an autonomous:
 
 - OSINT analyst  
