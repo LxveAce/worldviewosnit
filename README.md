@@ -421,3 +421,151 @@ const fs = require('fs');
 
   await browser.close();
 })();
+
+
+
+
+
+
+# 🧪 PHASE 15 — OPEN-SOURCE INTELLIGENCE TOOL RECON (GITHUB + ECOSYSTEM)
+
+Identify and correlate the tools, frameworks, and data sources used by the target system by searching open-source ecosystems.
+
+---
+
+## 🎯 OBJECTIVE
+
+Determine whether the application is built from:
+
+- known open-source OSINT platforms  
+- cloned dashboards  
+- publicly available data pipelines  
+- common frontend visualization stacks  
+
+---
+
+## 🔍 SEARCH TARGETS
+
+Search:
+
+### GitHub
+- repositories related to:
+  - "osint dashboard"
+  - "worldview osint"
+  - "osint globe"
+  - "3d globe intelligence"
+  - "cesium osint"
+  - "react osint dashboard"
+
+---
+
+### Other Sources
+- npm packages
+- PyPI libraries
+- developer blogs
+- open-source intelligence communities
+- OSINT tool directories
+
+---
+
+## 🔎 KEYWORD SETS
+
+Use variations of:
+
+- "OSINT platform"
+- "global intelligence dashboard"
+- "C4ISR dashboard"
+- "threat monitoring dashboard"
+- "real-time geospatial intelligence"
+
+---
+
+## 🧪 COMPONENT IDENTIFICATION
+
+From observed behavior + code patterns:
+
+Match against known tools:
+
+### Potential Frontend
+- React / Next.js dashboards
+- CesiumJS (3D globe)
+- Mapbox / Leaflet
+
+### Potential Backend
+- FastAPI
+- Express / Node API
+- serverless functions
+
+### Data Sources
+- USGS (earthquakes)
+- ADS-B Exchange
+- AIS / MarineTraffic
+- RSS feeds (news aggregation)
+
+---
+
+## 🔗 CORRELATION PROCESS
+
+For each discovered open-source project:
+
+Compare with target system:
+
+- UI similarity
+- data structures
+- endpoint naming
+- visualization style
+- feature overlap
+
+---
+
+## 🧬 CLONE / TEMPLATE DETECTION
+
+Determine if the system is:
+
+- directly cloned from a GitHub repo  
+- modified version of an open-source project  
+- loosely inspired by existing tools  
+
+---
+
+## 🧠 CONFIDENCE SCORING
+
+For each match:
+
+Assign:
+
+- HIGH → nearly identical structure  
+- MED → similar architecture/components  
+- LOW → general similarity only  
+
+---
+
+## 📊 OUTPUT
+
+Produce:
+
+1. List of matching repositories/tools  
+2. Links (if available)  
+3. Description of similarities  
+4. Likelihood of shared origin  
+5. Identified tech stack components  
+
+---
+
+## 🎯 FINAL GOAL
+
+Determine:
+
+- what open-source tools power or inspired this system  
+- whether it is original or assembled  
+- how advanced (or superficial) the implementation is  
+
+---
+
+## ⚠️ RULES
+
+- prioritize high-similarity matches  
+- ignore generic tools unless clearly relevant  
+- focus on structural and functional overlap  
+- remain evidence-based  
+``
