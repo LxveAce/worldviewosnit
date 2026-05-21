@@ -1,0 +1,17 @@
+{
+  "current_dns": [
+    "104.21.82.34",
+    "172.67.193.202"
+  ],
+  "subdomain_scan": "none_found",
+  "ipv6": "none",
+  "ct_logs": {
+    "error": "HTTP Error 502: Bad Gateway"
+  },
+  "wayback": [],
+  "viewdns_history": {
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "dns_txt": "none",
+  "dns_mx": "none"
+}

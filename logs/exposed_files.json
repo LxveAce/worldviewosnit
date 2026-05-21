@@ -1,0 +1,84 @@
+{
+  "/docker-compose.yml": {
+    "size": 367,
+    "content_type": "text/yaml; charset=UTF-8",
+    "is_html": false,
+    "saved_as": "docker-compose.yml",
+    "preview": "version: '3.8'\n\nservices:\n  worldview:\n    build: .\n    container_name: worldview-osint\n    command: ts-node src/server.rugged.ts\n    ports:\n      - \"3000:3000\"\n    restart: always\n    env_file: .env\n\n  neo4j:\n    image: neo4j:5-community\n    container_name: worldview-neo4j\n    ports:\n      - \"7474:7474\"\n      - \"7687:7687\"\n    environment:\n      - NEO4J_AUTH=none\n"
+  },
+  "/server.js": {
+    "size": 19929,
+    "content_type": "text/html; charset=UTF-8",
+    "is_html": true,
+    "saved_as": "server.js",
+    "preview": "HTML (19929B)"
+  },
+  "/index.js": {
+    "size": 19929,
+    "content_type": "text/html; charset=UTF-8",
+    "is_html": true,
+    "saved_as": "index.js",
+    "preview": "HTML (19929B)"
+  },
+  "/main.js": {
+    "size": 19929,
+    "content_type": "text/html; charset=UTF-8",
+    "is_html": true,
+    "saved_as": "main.js",
+    "preview": "HTML (19929B)"
+  },
+  "/config.js": {
+    "size": 19929,
+    "content_type": "text/html; charset=UTF-8",
+    "is_html": true,
+    "saved_as": "config.js",
+    "preview": "HTML (19929B)"
+  },
+  "/ecosystem.config.js": {
+    "size": 19929,
+    "content_type": "text/html; charset=UTF-8",
+    "is_html": true,
+    "saved_as": "ecosystem.config.js",
+    "preview": "HTML (19929B)"
+  },
+  "/robots.txt": {
+    "size": 19929,
+    "content_type": "text/html; charset=UTF-8",
+    "is_html": true,
+    "saved_as": "robots.txt",
+    "preview": "HTML (19929B)"
+  },
+  "/humans.txt": {
+    "size": 19929,
+    "content_type": "text/html; charset=UTF-8",
+    "is_html": true,
+    "saved_as": "humans.txt",
+    "preview": "HTML (19929B)"
+  },
+  "/security.txt": {
+    "size": 19929,
+    "content_type": "text/html; charset=UTF-8",
+    "is_html": true,
+    "saved_as": "security.txt",
+    "preview": "HTML (19929B)"
+  },
+  "/.well-known/security.txt": {
+    "size": 19929,
+    "content_type": "text/html; charset=UTF-8",
+    "is_html": true,
+    "saved_as": ".well-known_security.txt",
+    "preview": "HTML (19929B)"
+  },
+  "ai_analyze_GET": {
+    "error": "HTTP Error 401: Unauthorized",
+    "body": "{\"error\":\"Authentication required\"}"
+  },
+  "ai_analyze_POST": {
+    "error": "HTTP Error 404: Not Found",
+    "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/ai/analyze</pre>\n<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'9ff4e8046dbc23e7',t:'MTc3OTM4MDQwMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElem"
+  },
+  "ai_analyze_OPTIONS": {
+    "status": 204,
+    "body": ""
+  }
+}

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  worldview:
+    build: .
+    container_name: worldview-osint
+    command: ts-node src/server.rugged.ts
+    ports:
+      - "3000:3000"
+    restart: always
+    env_file: .env
+
+  neo4j:
+    image: neo4j:5-community
+    container_name: worldview-neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=none

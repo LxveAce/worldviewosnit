@@ -1,0 +1,146 @@
+[
+  {
+    "path": "/socket.io/?EIO=4&transport=websocket",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:34 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/socket.io/?EIO=3&transport=websocket",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:35 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/ws",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:36 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/websocket",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:37 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/live",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:38 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/stream",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:39 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/api/stream",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:40 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/api/ws",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:41 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/api/live",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:42 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/api/websocket",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:43 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/api/osint/stream",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:44 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/api/osint/ws",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:45 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/api/events",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:46 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/api/sse",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:47 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/realtime",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:48 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  },
+  {
+    "path": "/feed",
+    "status": "200",
+    "websocket": false,
+    "upgrade_101": false,
+    "spa_catchall": true,
+    "first_line": "HTTP/1.1 200 OK",
+    "response_preview": "HTTP/1.1 200 OK\r\nDate: Thu, 21 May 2026 16:17:49 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: DENY\r\nX-XSS-Protection: 1; mode=block\r\nStrict-Transport-Security: max-age=31536000\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nAccess-Control-Allow-Origin: https://worldviewosint.com\r\nVary: Origin\r\nAccess-Control-Allow-Credentials: true\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nLas"
+  }
+]

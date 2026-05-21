@@ -1,0 +1,542 @@
+[
+  {
+    "origin": "https://evil.com",
+    "endpoint": "/api/health",
+    "acao": "https://evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://evil.com",
+    "endpoint": "/api/osint/conflicts",
+    "acao": "https://evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://evil.com",
+    "endpoint": "/api/osint/maritime",
+    "acao": "https://evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://evil.com",
+    "endpoint": "/api/osint/aviation",
+    "acao": "https://evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://evil.com",
+    "endpoint": "/api/ai/status",
+    "acao": "https://evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://evil.com",
+    "endpoint": "/api/telegram/report",
+    "acao": "https://evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://attacker.example.com",
+    "endpoint": "/api/health",
+    "acao": "https://attacker.example.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://attacker.example.com",
+    "endpoint": "/api/osint/conflicts",
+    "acao": "https://attacker.example.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://attacker.example.com",
+    "endpoint": "/api/osint/maritime",
+    "acao": "https://attacker.example.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://attacker.example.com",
+    "endpoint": "/api/osint/aviation",
+    "acao": "https://attacker.example.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://attacker.example.com",
+    "endpoint": "/api/ai/status",
+    "acao": "https://attacker.example.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://attacker.example.com",
+    "endpoint": "/api/telegram/report",
+    "acao": "https://attacker.example.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "http://localhost:8080",
+    "endpoint": "/api/health",
+    "acao": "http://localhost:8080",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "http://localhost:8080",
+    "endpoint": "/api/osint/conflicts",
+    "acao": "http://localhost:8080",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "http://localhost:8080",
+    "endpoint": "/api/osint/maritime",
+    "acao": "http://localhost:8080",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "http://localhost:8080",
+    "endpoint": "/api/osint/aviation",
+    "acao": "http://localhost:8080",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "http://localhost:8080",
+    "endpoint": "/api/ai/status",
+    "acao": "http://localhost:8080",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "http://localhost:8080",
+    "endpoint": "/api/telegram/report",
+    "acao": "http://localhost:8080",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://worldviewosint.com.evil.com",
+    "endpoint": "/api/health",
+    "acao": "https://worldviewosint.com.evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://worldviewosint.com.evil.com",
+    "endpoint": "/api/osint/conflicts",
+    "acao": "https://worldviewosint.com.evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://worldviewosint.com.evil.com",
+    "endpoint": "/api/osint/maritime",
+    "acao": "https://worldviewosint.com.evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://worldviewosint.com.evil.com",
+    "endpoint": "/api/osint/aviation",
+    "acao": "https://worldviewosint.com.evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://worldviewosint.com.evil.com",
+    "endpoint": "/api/ai/status",
+    "acao": "https://worldviewosint.com.evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://worldviewosint.com.evil.com",
+    "endpoint": "/api/telegram/report",
+    "acao": "https://worldviewosint.com.evil.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://sub.worldviewosint.com",
+    "endpoint": "/api/health",
+    "acao": "https://sub.worldviewosint.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://sub.worldviewosint.com",
+    "endpoint": "/api/osint/conflicts",
+    "acao": "https://sub.worldviewosint.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://sub.worldviewosint.com",
+    "endpoint": "/api/osint/maritime",
+    "acao": "https://sub.worldviewosint.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://sub.worldviewosint.com",
+    "endpoint": "/api/osint/aviation",
+    "acao": "https://sub.worldviewosint.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://sub.worldviewosint.com",
+    "endpoint": "/api/ai/status",
+    "acao": "https://sub.worldviewosint.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://sub.worldviewosint.com",
+    "endpoint": "/api/telegram/report",
+    "acao": "https://sub.worldviewosint.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "null",
+    "endpoint": "/api/health",
+    "acao": "null",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "null",
+    "endpoint": "/api/osint/conflicts",
+    "acao": "null",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "null",
+    "endpoint": "/api/osint/maritime",
+    "acao": "null",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "null",
+    "endpoint": "/api/osint/aviation",
+    "acao": "null",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "null",
+    "endpoint": "/api/ai/status",
+    "acao": "null",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "null",
+    "endpoint": "/api/telegram/report",
+    "acao": "null",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://google.com",
+    "endpoint": "/api/health",
+    "acao": "https://google.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://google.com",
+    "endpoint": "/api/osint/conflicts",
+    "acao": "https://google.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://google.com",
+    "endpoint": "/api/osint/maritime",
+    "acao": "https://google.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://google.com",
+    "endpoint": "/api/osint/aviation",
+    "acao": "https://google.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://google.com",
+    "endpoint": "/api/ai/status",
+    "acao": "https://google.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "https://google.com",
+    "endpoint": "/api/telegram/report",
+    "acao": "https://google.com",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "file://",
+    "endpoint": "/api/health",
+    "acao": "file://",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "file://",
+    "endpoint": "/api/osint/conflicts",
+    "acao": "file://",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "file://",
+    "endpoint": "/api/osint/maritime",
+    "acao": "file://",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "file://",
+    "endpoint": "/api/osint/aviation",
+    "acao": "file://",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "file://",
+    "endpoint": "/api/ai/status",
+    "acao": "file://",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "file://",
+    "endpoint": "/api/telegram/report",
+    "acao": "file://",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "Authorization",
+    "reflected": true,
+    "vulnerable": true
+  },
+  {
+    "origin": "(none)",
+    "endpoint": "/api/health",
+    "acao": "(none)",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "(none)",
+    "reflected": false,
+    "vulnerable": false
+  },
+  {
+    "origin": "(none)",
+    "endpoint": "/api/osint/conflicts",
+    "acao": "(none)",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "(none)",
+    "reflected": false,
+    "vulnerable": false
+  },
+  {
+    "origin": "(none)",
+    "endpoint": "/api/osint/maritime",
+    "acao": "(none)",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "(none)",
+    "reflected": false,
+    "vulnerable": false
+  },
+  {
+    "origin": "(none)",
+    "endpoint": "/api/osint/aviation",
+    "acao": "(none)",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "(none)",
+    "reflected": false,
+    "vulnerable": false
+  },
+  {
+    "origin": "(none)",
+    "endpoint": "/api/ai/status",
+    "acao": "(none)",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "(none)",
+    "reflected": false,
+    "vulnerable": false
+  },
+  {
+    "origin": "(none)",
+    "endpoint": "/api/telegram/report",
+    "acao": "(none)",
+    "acac": "true",
+    "acam": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "acah": "(none)",
+    "reflected": false,
+    "vulnerable": false
+  }
+]

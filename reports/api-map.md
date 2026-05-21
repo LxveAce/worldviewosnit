@@ -2,7 +2,8 @@
 
 **Target:** https://worldviewosint.com
 **Date:** 2026-05-21
-**Total endpoints discovered:** 16 real + SPA catch-all for everything else
+**Total endpoints discovered:** 17 real + SPA catch-all for everything else
+**Last updated:** 2026-05-21 (active testing pass)
 
 ---
 
@@ -35,10 +36,11 @@
 | Endpoint | Method | Auth | Response | Notes |
 |----------|--------|:----:|----------|-------|
 | `/api/ai/status` | GET | No | AI config object | Shows enabled:false, callsToday, callsMax(6), tokens, cost |
-| `/api/ai/toggle` | POST | No* | Updated AI config | Toggles AI on/off. Body: `{enabled: bool}` |
-| `/api/ai/force` | GET | No* | `{ok: bool, tokens: n, reason: str}` | Forces DeepSeek analysis run |
+| `/api/ai/toggle` | POST | **YES (401)** | Updated AI config | Toggles AI on/off. Body: `{enabled: bool}` |
+| `/api/ai/force` | GET | **YES (401)** | `{ok: bool, tokens: n, reason: str}` | Forces DeepSeek analysis run |
+| `/api/ai/analyze` | GET | **YES (401)** | Unknown | Discovered via dir brute-force. POST returns 404 "Cannot POST". |
 
-*AI endpoints appear unauthenticated but may have server-side rate limiting (max 6 calls/day).
+**Correction:** Initial static analysis showed no auth headers in client-side code, but live testing confirmed `/api/ai/toggle` and `/api/ai/force` both return 401. The client-side code sends credentials that aren't visible in the deobfuscated source. `/api/ai/analyze` is a newly discovered endpoint not referenced in the client JS.
 
 ### Telegram
 
@@ -56,12 +58,20 @@
 
 ## SPA Catch-All Behavior
 
-All non-API paths return the same `index.html` (20,848 bytes). This includes:
-- `/robots.txt`, `/sitemap.xml`, `/.well-known/*` — all return HTML, not their expected formats
-- `/.env`, `/admin`, `/debug`, `/internal` — all return the SPA (not actual sensitive files)
-- `/config.json`, `/manifest.json` — SPA, not real config files
+Most non-API paths return the SPA `index.html` (~21,130 bytes). However, brute-force testing (133 paths) found **two categories** of non-API responses:
 
-**49 paths tested** — all returned identical HTML body except `/api/health` (JSON).
+### Real Files Served
+| Path | Size | Content |
+|------|-----:|---------|
+| `/docker-compose.yml` | 367B | **REAL YAML** — full Docker configuration (CRITICAL) |
+| `/app.js` | 12,410B | Client-side Vue.js application code |
+
+### Different-Size HTML (19,929B vs 21,130B SPA)
+These paths serve HTML but at a slightly smaller size — likely a Cloudflare cache variant without injected scripts:
+`/server.js`, `/index.js`, `/main.js`, `/config.js`, `/ecosystem.config.js`, `/robots.txt`, `/humans.txt`, `/security.txt`, `/.well-known/security.txt`, `/.well-known/acme-challenge/test`
+
+### SPA Catch-All (120/133 paths)
+Everything else returns the standard ~21,130 byte SPA HTML — including `/.env`, `/admin`, `/debug`, `/backup.sql`, `/.git/HEAD`, etc.
 
 ---
 
