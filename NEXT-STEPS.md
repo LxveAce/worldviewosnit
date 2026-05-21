@@ -637,14 +637,14 @@ Checks for:
 | 5 | Path brute-force with Node.js wordlist | 20 min | HIGH | **DONE** — 133 paths, found `/docker-compose.yml` exposed + `/api/ai/analyze` |
 | 6 | Auth bypass on `/api/telegram/report` | 15 min | MEDIUM-HIGH | **DONE** — 48 vectors tested, 0 bypasses |
 | 7 | CT logs + historical DNS | 10 min | MEDIUM-HIGH | **DONE** — CertSpotter: 2 certs from day 1 (Cloudflare from start), no pre-CF IP |
-| 8 | Shodan/Censys fingerprint search | 10 min | HIGH | **BLOCKED** — Requires API keys. Search queries documented. |
+| 8 | Shodan/Censys fingerprint search | 10 min | HIGH | **DONE** — Free tier: host lookup only, search needs paid. CF IPs confirmed. |
 | 9 | GitHub search for juanes2794 | 5 min | HIGH | **DONE** — Account does NOT exist on GitHub/GitLab/npm/etc |
 | 10 | WebSocket handshake testing | 10 min | MEDIUM | **DONE** — 16 paths tested, 0 WebSocket endpoints (HTTP polling only) |
 | 11 | Parameter fuzzing on API endpoints | 30 min | HIGH | **DONE** — API ignores ALL query params (static in-memory data) |
 | 12 | Response timing analysis | 5 min | MEDIUM | **DONE** — Aviation/thermal ~1100ms (external), others cached |
-| 13 | Multi-point temporal capture | 24 hrs | HIGH | **Pending** — needs cron setup |
-| 14 | Nuclei vulnerability scan | 15 min | MEDIUM | **Pending** — needs nuclei install |
-| 15 | SSL/TLS deep audit | 10 min | LOW-MEDIUM | **Pending** |
+| 13 | Multi-point temporal capture | 24 hrs | HIGH | **STARTED** — 2nd capture done, aviation 180→535, BTC $77150→$77059 |
+| 14 | Nuclei vulnerability scan | 15 min | MEDIUM | **Pending** — needs Go + nuclei install (no Go on this system) |
+| 15 | SSL/TLS deep audit | 10 min | LOW-MEDIUM | **DONE** — Grade A, TLS 1.2+1.3 only, ECDSA, no vulns, HSTS 365d |
 
 ### Key Discoveries from Execution
 
