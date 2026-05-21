@@ -1,0 +1,54 @@
+{
+  "protocols": {
+    "SSL 3.0": {
+      "enabled": false
+    },
+    "TLS 1.0": {
+      "enabled": false
+    },
+    "TLS 1.1": {
+      "enabled": false
+    },
+    "TLS 1.2": {
+      "enabled": true,
+      "version": "TLSv1.2",
+      "cipher": "ECDHE-ECDSA-CHACHA20-POLY1305",
+      "bits": 256
+    },
+    "TLS 1.3": {
+      "enabled": true,
+      "version": "TLSv1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "bits": 256
+    }
+  },
+  "certificate": {
+    "subject": {
+      "commonName": "worldviewosint.com"
+    },
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Let's Encrypt",
+      "commonName": "E7"
+    },
+    "not_before": "Mar 28 18:11:17 2026 GMT",
+    "not_after": "Jun 26 18:11:16 2026 GMT",
+    "serial": "06CF8B3D2B3FCFFDA86E25856A60DCD0B319",
+    "sans": [
+      "*.worldviewosint.com",
+      "worldviewosint.com"
+    ],
+    "ocsp": null,
+    "size_bytes": 939
+  },
+  "security_headers": {
+    "hsts": "max-age=31536000",
+    "x_frame_options": "DENY",
+    "x_content_type_options": "nosniff",
+    "csp": "",
+    "x_xss_protection": "1; mode=block",
+    "referrer_policy": "strict-origin-when-cross-origin",
+    "permissions_policy": ""
+  },
+  "grade": "A"
+}
