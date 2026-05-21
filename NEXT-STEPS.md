@@ -1,7 +1,7 @@
 # Next Steps — Deep Penetration & Intelligence Gathering
 
 **Last updated:** 2026-05-21
-**Status:** Planning — awaiting execution
+**Status:** Active execution — Tier 1-2 partially complete
 
 ---
 
@@ -630,21 +630,33 @@ Checks for:
 
 | Priority | Phase | Effort | Expected Yield | Status |
 |:--------:|-------|:------:|:--------------:|:------:|
-| 1 | Install Node.js + run Playwright capture | 15 min | HIGH | Pending |
-| 2 | HTTP method fuzzing on all 16 endpoints | 10 min | HIGH | Pending |
-| 3 | Activate AI endpoints (toggle + force) | 5 min | HIGH | Pending |
-| 4 | Git repo exposure check (`.git/HEAD`) | 2 min | CRITICAL if exposed | Pending |
-| 5 | Path brute-force with Node.js wordlist | 20 min | HIGH | Pending |
-| 6 | Auth bypass on `/api/telegram/report` | 15 min | MEDIUM-HIGH | Pending |
-| 7 | CT logs + historical DNS | 10 min | MEDIUM-HIGH | Pending |
-| 8 | Shodan/Censys fingerprint search | 10 min | HIGH | Pending |
-| 9 | GitHub search for juanes2794 | 5 min | HIGH | Pending |
-| 10 | WebSocket handshake testing | 10 min | MEDIUM | Pending |
-| 11 | Parameter fuzzing on API endpoints | 30 min | HIGH | Pending |
-| 12 | Response timing analysis | 5 min | MEDIUM | Pending |
-| 13 | Multi-point temporal capture | 24 hrs | HIGH | Pending |
-| 14 | Nuclei vulnerability scan | 15 min | MEDIUM | Pending |
-| 15 | SSL/TLS deep audit | 10 min | LOW-MEDIUM | Pending |
+| 1 | Install Node.js + run Playwright capture | 15 min | HIGH | **Pending** |
+| 2 | HTTP method fuzzing on all 16 endpoints | 10 min | HIGH | **DONE** — API is GET-only, all mutations return SPA |
+| 3 | Activate AI endpoints (toggle + force) | 5 min | HIGH | **DONE** — Requires auth (401), NOT unauthenticated |
+| 4 | Git repo exposure check (`.git/HEAD`) | 2 min | CRITICAL if exposed | **DONE** — NOT exposed (returns SPA HTML) |
+| 5 | Path brute-force with Node.js wordlist | 20 min | HIGH | **Pending** — needs ffuf/gobuster |
+| 6 | Auth bypass on `/api/telegram/report` | 15 min | MEDIUM-HIGH | **DONE** — 48 vectors tested, 0 bypasses |
+| 7 | CT logs + historical DNS | 10 min | MEDIUM-HIGH | **PARTIAL** — CT logs checked (no pre-CF certs), historical DNS needs SecurityTrails |
+| 8 | Shodan/Censys fingerprint search | 10 min | HIGH | **BLOCKED** — Requires Shodan API key / paid account |
+| 9 | GitHub search for juanes2794 | 5 min | HIGH | **DONE** — Account does NOT exist on GitHub/GitLab/npm/etc |
+| 10 | WebSocket handshake testing | 10 min | MEDIUM | **Pending** — needs wscat |
+| 11 | Parameter fuzzing on API endpoints | 30 min | HIGH | **DONE** — API ignores ALL query params (static in-memory data) |
+| 12 | Response timing analysis | 5 min | MEDIUM | **DONE** — Aviation/thermal ~1100ms (external), others cached |
+| 13 | Multi-point temporal capture | 24 hrs | HIGH | **Pending** — needs cron setup |
+| 14 | Nuclei vulnerability scan | 15 min | MEDIUM | **Pending** — needs nuclei install |
+| 15 | SSL/TLS deep audit | 10 min | LOW-MEDIUM | **Pending** |
+
+### Key Discoveries from Execution
+
+| Finding | Impact |
+|---------|--------|
+| **CORS origin reflection** | CRITICAL — Server reflects ANY origin with `Access-Control-Allow-Credentials: true` |
+| **AI endpoints require auth** | Corrects initial assessment — HTTP Basic Auth enforced server-side |
+| **Auth mechanism = HTTP Basic** | `"Invalid credentials"` response confirms Basic Auth, not token/session |
+| **API ignores all params** | Static in-memory data — no hidden query functionality |
+| **API is GET-only** | No write access via mutation methods |
+| **juanes2794 is Mapbox-only** | Username not found on any code/social platform |
+| **29 OSINT tools cataloged** | See `recon/github-osint.md` for full tool analysis |
 
 ---
 

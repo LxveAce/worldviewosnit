@@ -7,7 +7,11 @@
 
 ## Executive Summary
 
-The application has a **mixed security posture**. Server-side security headers are well-configured (HSTS, X-Frame-Options DENY, nosniff). However, there are significant issues: an exposed Mapbox API token, completely unauthenticated data APIs, no API rate limiting, and AI control endpoints that anyone can toggle. The Telegram integration is properly secured (auth-required, server-side token).
+The application has a **mixed security posture**. Server-side security headers are well-configured (HSTS, X-Frame-Options DENY, nosniff). However, there are significant issues: a **critical CORS misconfiguration** that reflects any origin with credentials, an exposed Mapbox API token, completely unauthenticated data APIs, and no API rate limiting. The Telegram integration and AI control endpoints are properly secured behind HTTP Basic Authentication.
+
+> **Update (2026-05-21):** Active testing corrected two findings from the initial static analysis:
+> 1. **AI endpoints DO require auth** — `POST /api/ai/toggle` and `GET /api/ai/force` both return 401. The client-side code showed no auth headers, but the server enforces HTTP Basic Auth server-side. C1 downgraded from CRITICAL to corrected.
+> 2. **CORS is worse than initially assessed** — The server reflects ANY `Origin` header back as `Access-Control-Allow-Origin` while also sending `Access-Control-Allow-Credentials: true`. Upgraded from MEDIUM to CRITICAL.
 
 ---
 
@@ -15,16 +19,32 @@ The application has a **mixed security posture**. Server-side security headers a
 
 ### CRITICAL
 
-#### C1. Unauthenticated AI Control Endpoints
+#### C1. ~~Unauthenticated AI Control Endpoints~~ **CORRECTED — Auth Required**
 | Field | Detail |
 |-------|--------|
 | Endpoints | `POST /api/ai/toggle`, `GET /api/ai/force` |
-| Risk | Anyone can enable/disable the AI system and trigger DeepSeek API calls |
-| Impact | Cost abuse (DeepSeek API charges), denial of service for legitimate users |
-| Evidence | `api.post('/api/ai/toggle',{enabled:n})` in app.js with no auth headers |
-| CVSS Estimate | 7.5 (High) |
+| Status | **FALSE POSITIVE** — Server enforces HTTP Basic Auth |
+| Evidence | Static analysis of app.js showed no auth headers, but live testing confirmed 401 response |
+| Tested | 48 auth bypass vectors (header spoofing, path traversal, cookie replay) — all failed |
+| Auth Type | HTTP Basic Authentication (`"Invalid credentials"` response to `Basic YWRtaW46YWRtaW4=`) |
+| CVSS Estimate | ~~7.5~~ **N/A — properly secured** |
 
-**Recommendation:** Add authentication to AI control endpoints immediately.
+**Status:** Closed. The server enforces authentication that isn't visible in client-side code.
+
+---
+
+#### C2. CORS Origin Reflection with Credentials (NEW)
+| Field | Detail |
+|-------|--------|
+| Vulnerability | Server reflects ANY `Origin` header as `Access-Control-Allow-Origin` |
+| Headers | `Access-Control-Allow-Origin: [reflected]`, `Access-Control-Allow-Credentials: true` |
+| Methods | `Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS` |
+| Impact | Any website can make credentialed cross-origin requests to the API |
+| Attack | Attacker page can steal all OSINT data via authenticated cross-origin requests |
+| Evidence | `OPTIONS /api/osint/conflicts` with `Origin: https://evil.com` reflects evil.com |
+| CVSS Estimate | 8.1 (High) |
+
+**Recommendation:** Replace wildcard origin reflection with an explicit allowlist (`https://worldviewosint.com`). Never combine `Access-Control-Allow-Credentials: true` with a reflected origin.
 
 ---
 
@@ -77,15 +97,9 @@ The application has a **mixed security posture**. Server-side security headers a
 
 **Recommendation:** Add CSP header restricting scripts to self + known CDNs.
 
-#### M2. CORS Allows Credentials Without Origin Restriction
-| Field | Detail |
-|-------|--------|
-| Header | `Access-Control-Allow-Credentials: true` |
-| Missing | No `Access-Control-Allow-Origin` header observed |
-| Risk | If the server reflects the Origin header, this enables CSRF-style API access |
-| Impact | Cross-origin data theft from authenticated sessions |
+#### M2. ~~CORS Credential Misconfiguration~~ **UPGRADED TO C2 (CRITICAL)**
 
-**Recommendation:** Explicitly set `Access-Control-Allow-Origin` to `https://worldviewosint.com`.
+See finding **C2** above. Active testing confirmed the server reflects ANY origin with credentials enabled — this is a textbook CORS misconfiguration.
 
 #### M3. Server Version Information Disclosure
 | Field | Detail |
@@ -157,12 +171,13 @@ The application has a **mixed security posture**. Server-side security headers a
 
 | ID | Finding | Severity | CVSS | Status |
 |----|---------|:--------:|:----:|--------|
-| C1 | Unauthenticated AI control | CRITICAL | 7.5 | Open |
+| C1 | ~~Unauthenticated AI control~~ | ~~CRITICAL~~ | ~~7.5~~ | **Corrected** — Auth enforced |
+| C2 | **CORS origin reflection + credentials** | **CRITICAL** | **8.1** | **Open** |
 | H1 | Unauthenticated data APIs | HIGH | 5.3 | Open |
 | H2 | Exposed Mapbox token | HIGH | 5.3 | Open |
 | H3 | No API rate limiting | HIGH | 5.3 | Open |
 | M1 | No CSP header | MEDIUM | 4.3 | Open |
-| M2 | CORS credential misconfiguration | MEDIUM | 4.3 | Open |
+| M2 | ~~CORS credential misconfiguration~~ | ~~MEDIUM~~ | ~~4.3~~ | **Upgraded to C2** |
 | M3 | Health endpoint info disclosure | MEDIUM | 3.1 | Open |
 | M4 | Cloudflare bot detection | MEDIUM | 2.1 | Expected |
 | L1 | Missing robots.txt | LOW | 0.0 | Open |
@@ -171,6 +186,28 @@ The application has a **mixed security posture**. Server-side security headers a
 
 ---
 
+## Additional Findings from Active Testing (2026-05-21)
+
+### Authentication Mechanism
+- **Type:** HTTP Basic Authentication
+- **Protected endpoints:** `/api/ai/toggle`, `/api/ai/force`, `/api/telegram/report`
+- **Evidence:** `Authorization: Basic YWRtaW46YWRtaW4=` returns `"Invalid credentials"` (not `"Authentication required"`)
+- **Bypass tested:** 48 vectors (header spoofing, path traversal, cookie replay, NoSQL injection) — **0 successful**
+
+### API Parameter Handling
+- **All query parameters are ignored** — the API serves static in-memory data regardless of `?limit=`, `?debug=`, `?all=true`, etc.
+- **NoSQL injection attempts** (`$ne`, `$gt`, `$regex`, `$where`) all ignored — server doesn't parse query strings into database queries
+- **Method fuzzing:** All 16 endpoints are GET-only. POST/PUT/PATCH/DELETE to data endpoints return the SPA catch-all HTML.
+
+### Response Timing Classification
+| Classification | Endpoints | Avg Response |
+|---------------|-----------|:------------:|
+| External API call | `/api/osint/aviation`, `/api/osint/thermal` | ~1100-1150ms |
+| Server computation | `/api/osint/maritime`, `/api/osint/conflicts`, `/api/osint/security`, `/api/osint/disasters` | ~300-475ms |
+| Cached/in-memory | `/api/health`, `/api/risk-summary`, `/api/ai/status` | <150ms |
+
+---
+
 ## Overall Risk Rating: **MEDIUM-HIGH**
 
-The system is an operational intelligence dashboard, not a malicious or surveillance tool. The main risks are around **access control** (anyone can access all data and control the AI system) and **token exposure** (Mapbox billing risk). The Telegram integration is the one properly secured component.
+The system is an operational intelligence dashboard, not a malicious or surveillance tool. The main risks are around **access control** (anyone can scrape all OSINT data without authentication), **CORS misconfiguration** (critical — any website can make credentialed cross-origin requests), and **token exposure** (Mapbox billing risk). The Telegram integration and AI control endpoints are properly secured behind HTTP Basic Auth — better than initially assessed.

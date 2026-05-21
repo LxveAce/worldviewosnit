@@ -1,0 +1,1037 @@
+[
+  {
+    "endpoint": "/api/health",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"OK\",\"v\":\"6.0.0\",\"up\":4589950.895366541,\"mem\":\"280MB\",\"aisConnected\":true,\"aisVessels\":269}",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/health",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/health",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/health",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/health",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/health",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/health",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "101"
+  },
+  {
+    "endpoint": "/api/risk-summary",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"sysStatus\":\"OPTIMAL\",\"totalRisk\":7.8,\"criticalAlerts\":5,\"activeFronts\":14,\"monitoredVessels\":8,\"thermalHotspots\":12,\"confirmedLosses\":21,\"infraHits\":10,\"aisConnected\":true,\"aisVessels\":269,\"lastUpdate\":\"2026-05-21T16:04:22.249Z\"}",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/risk-summary",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/risk-summary",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/risk-summary",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/risk-summary",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/risk-summary",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/risk-summary",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "231"
+  },
+  {
+    "endpoint": "/api/osint/conflicts",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"ACTIVE\",\"zones\":[{\"lat\":48.14,\"lon\":37.74,\"name\":\"Avdiivka Sector\",\"type\":\"ACTIVE_COMBAT\",\"intensity\":\"CRITICAL\",\"description\":\"Mechanized assault, heavy RU losses\",\"region\":\"Donetsk\"},{\"lat\":48.58,\"lon\":37.98,\"name\":\"Bakhmut-Chasiv Yar\",\"type\":\"ACTIVE_COMBAT\",\"intensity\":\"HIGH\",\"descript",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/osint/conflicts",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/conflicts",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/conflicts",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/conflicts",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/conflicts",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/osint/conflicts",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "5432"
+  },
+  {
+    "endpoint": "/api/osint/thermal",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"ACTIVE\",\"hotspots\":[{\"lat\":48.01,\"lon\":37.8,\"brightness\":340,\"confidence\":95,\"frp\":45,\"type\":\"THERMAL\",\"source\":\"FALLBACK\",\"region\":\"Ukraine\",\"date\":\"\"},{\"lat\":31.4,\"lon\":34.38,\"brightness\":380,\"confidence\":99,\"frp\":80,\"type\":\"HIGH_ENERGY\",\"source\":\"FALLBACK\",\"region\":\"Gaza\",\"date\":\"\"}]}",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/osint/thermal",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/thermal",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/thermal",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/thermal",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/thermal",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/osint/thermal",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "299"
+  },
+  {
+    "endpoint": "/api/osint/oryx",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"ACTIVE\",\"losses\":[{\"lat\":48.2,\"lon\":37.8,\"side\":\"RU\",\"equipment\":\"T-72B3\",\"status\":\"DESTROYED\",\"count\":3,\"evidence\":\"Photo\",\"region\":\"Avdiivka\"},{\"lat\":48.55,\"lon\":37.95,\"side\":\"RU\",\"equipment\":\"BMP-2\",\"status\":\"DESTROYED\",\"count\":5,\"evidence\":\"Video\",\"region\":\"Bakhmut\"},{\"lat\":48.6,\"lon\"",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/osint/oryx",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/oryx",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/oryx",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/oryx",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/oryx",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/osint/oryx",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "1339"
+  },
+  {
+    "endpoint": "/api/osint/maritime",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\"AIS-0\",\"shipType\":0,\"timestamp\":1775803404906},{\"id\":\"ISLAND EXPRESS\",\"mmsi\":\"367473510\",\"lat\":32.85",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/osint/maritime",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/maritime",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/maritime",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/maritime",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/maritime",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/osint/maritime",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "10813"
+  },
+  {
+    "endpoint": "/api/osint/security",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"ACTIVE\",\"incidents\":[{\"lat\":36.19,\"lon\":44.01,\"name\":\"Erbil Drone Attack\",\"type\":\"DRONE\",\"target\":\"Military base\",\"casualties\":\"None\",\"date\":\"2026-03-15\",\"region\":\"Iraq\"},{\"lat\":33.31,\"lon\":44.37,\"name\":\"Baghdad IED\",\"type\":\"IED\",\"target\":\"Convoy\",\"casualties\":\"3 injured\",\"date\":\"2026-03-",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/osint/security",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/security",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/security",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/security",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/security",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/osint/security",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "1571"
+  },
+  {
+    "endpoint": "/api/osint/disasters",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"ACTIVE\",\"events\":[{\"lat\":32.9638328552246,\"lon\":-115.856666564941,\"name\":\"23 km WSW of Westmorland, CA\",\"type\":\"EARTHQUAKE\",\"magnitude\":3.01939015159779,\"status\":\"MINOR\",\"date\":\"2026-05-21\",\"region\":\"23 km WSW of Westmorland, CA\",\"tsunami\":0,\"depth\":18},{\"lat\":27.2034,\"lon\":55.6594,\"name\"",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/osint/disasters",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/disasters",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/disasters",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/disasters",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/disasters",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/osint/disasters",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "3748"
+  },
+  {
+    "endpoint": "/api/osint/aviation",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"ACTIVE\",\"milCount\":541,\"civCount\":30,\"vectors\":[{\"callsign\":\"R63082\",\"icao24\":\"ae5bf5\",\"lat\":46.907272,\"lon\":-123.931961,\"alt\":4800,\"vel\":44,\"heading\":67,\"country\":\"16-03082\",\"on_ground\":false,\"category\":7,\"source\":\"adsb.lol\",\"acType\":\"H64\",\"reg\":\"16-03082\",\"military\":true},{\"callsign\":\"C",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/osint/aviation",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/aviation",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/aviation",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/aviation",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/aviation",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/osint/aviation",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "247448"
+  },
+  {
+    "endpoint": "/api/portfolio",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"ACTIVE\",\"market\":{\"asset\":\"BTC/USDT\",\"price\":\"77262.89000000\",\"status\":\"ACTIVE\"}}",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/portfolio",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/portfolio",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/portfolio",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/portfolio",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/portfolio",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/portfolio",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "92"
+  },
+  {
+    "endpoint": "/api/osint/losses",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"ru\":{\"total\":16,\"destroyed\":15,\"captured\":1,\"damaged\":0},\"ua\":{\"total\":2,\"destroyed\":0,\"captured\":0,\"damaged\":2},\"il\":{\"total\":3,\"destroyed\":1,\"captured\":0,\"damaged\":2},\"lastUpdate\":\"2026-05-21T15:55:10.876Z\"}",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/osint/losses",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/losses",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/losses",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/losses",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/losses",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/osint/losses",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "211"
+  },
+  {
+    "endpoint": "/api/osint/economic",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"ACTIVE\",\"news\":[{\"headline\":\"EU approves 14th sanctions package targeting RU oil revenue\",\"impact\":\"HIGH\",\"sector\":\"ENERGY\",\"region\":\"EU/Russia\",\"sentiment\":\"bearish_ru\"},{\"headline\":\"US Fed holds rates steady, signals June cut possible\",\"impact\":\"HIGH\",\"sector\":\"MONETARY\",\"region\":\"Globa",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/osint/economic",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/economic",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/economic",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/economic",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/economic",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/osint/economic",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "1477"
+  },
+  {
+    "endpoint": "/api/osint/infra",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"status\":\"ACTIVE\",\"targets\":[{\"lat\":50.45,\"lon\":30.52,\"target\":\"Kyiv Power Grid\",\"type\":\"ENERGY\",\"status\":\"DAMAGED\",\"weapon\":\"Shahed-136\",\"date\":\"2026-03-27\",\"impact\":\"Partial blackout, 200k affected\"},{\"lat\":48.46,\"lon\":35.04,\"target\":\"Dnipro Bridge\",\"type\":\"TRANSPORT\",\"status\":\"DESTROYED\",\"weapon",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/osint/infra",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/infra",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/infra",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/infra",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/osint/infra",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/osint/infra",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "1752"
+  },
+  {
+    "endpoint": "/api/ai/status",
+    "method": "GET",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"enabled\":false,\"callsToday\":0,\"callsMax\":6,\"totalTokens\":0,\"estimatedCostUSD\":\"0.000000\",\"lastAnalysis\":\"\",\"lastTime\":\"\"}",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/ai/status",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/status",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/status",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/status",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/status",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/ai/status",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": "123"
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "method": "GET",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "method": "POST",
+    "status": 401,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"error\":\"Authentication required\"}",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "method": "HEAD",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "body_preview": null,
+    "interesting": false,
+    "content_length": ""
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "method": "GET",
+    "status": 401,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"error\":\"Authentication required\"}",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "method": "HEAD",
+    "status": 401,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "[empty]",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "method": "GET",
+    "status": 401,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "{\"error\":\"Authentication required\"}",
+    "interesting": true
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "method": "POST",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "method": "PUT",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "method": "PATCH",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "method": "DELETE",
+    "status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "body_preview": "[SPA HTML]",
+    "interesting": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "method": "OPTIONS",
+    "status": 204,
+    "content_type": "",
+    "body_preview": "",
+    "interesting": true,
+    "allow": "",
+    "access_control_allow_methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "access_control_allow_origin": "",
+    "access_control_allow_headers": ""
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "method": "HEAD",
+    "status": 401,
+    "content_type": "application/json; charset=utf-8",
+    "body_preview": "[empty]",
+    "interesting": true
+  }
+]

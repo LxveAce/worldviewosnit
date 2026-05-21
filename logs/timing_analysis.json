@@ -1,0 +1,128 @@
+{
+  "/api/health": {
+    "times_ms": [
+      479.2,
+      472.9,
+      474.6
+    ],
+    "avg_ms": 475.6,
+    "classification": "SERVER COMPUTATION"
+  },
+  "/api/risk-summary": {
+    "times_ms": [
+      418.0,
+      423.6,
+      525.2
+    ],
+    "avg_ms": 455.6,
+    "classification": "SERVER COMPUTATION"
+  },
+  "/api/osint/conflicts": {
+    "times_ms": [
+      315.4,
+      525.3,
+      521.9
+    ],
+    "avg_ms": 454.2,
+    "classification": "SERVER COMPUTATION"
+  },
+  "/api/osint/thermal": {
+    "times_ms": [
+      2482.7,
+      401.9,
+      528.9
+    ],
+    "avg_ms": 1137.8,
+    "classification": "EXTERNAL API CALL"
+  },
+  "/api/osint/oryx": {
+    "times_ms": [
+      523.6,
+      420.7,
+      832.5
+    ],
+    "avg_ms": 592.3,
+    "classification": "EXTERNAL API CALL"
+  },
+  "/api/osint/maritime": {
+    "times_ms": [
+      503.3,
+      338.9,
+      253.8
+    ],
+    "avg_ms": 365.3,
+    "classification": "SERVER COMPUTATION"
+  },
+  "/api/osint/security": {
+    "times_ms": [
+      396.9,
+      253.1,
+      257.7
+    ],
+    "avg_ms": 302.6,
+    "classification": "SERVER COMPUTATION"
+  },
+  "/api/osint/disasters": {
+    "times_ms": [
+      314.2,
+      358.0,
+      282.5
+    ],
+    "avg_ms": 318.2,
+    "classification": "SERVER COMPUTATION"
+  },
+  "/api/osint/aviation": {
+    "times_ms": [
+      1525.2,
+      966.5,
+      968.3
+    ],
+    "avg_ms": 1153.3,
+    "classification": "EXTERNAL API CALL"
+  },
+  "/api/portfolio": {
+    "times_ms": [
+      498.2,
+      392.4,
+      384.8
+    ],
+    "avg_ms": 425.1,
+    "classification": "SERVER COMPUTATION"
+  },
+  "/api/osint/losses": {
+    "times_ms": [
+      402.1,
+      495.7,
+      728.1
+    ],
+    "avg_ms": 542.0,
+    "classification": "EXTERNAL API CALL"
+  },
+  "/api/osint/economic": {
+    "times_ms": [
+      399.8,
+      403.5,
+      425.8
+    ],
+    "avg_ms": 409.7,
+    "classification": "SERVER COMPUTATION"
+  },
+  "/api/osint/infra": {
+    "times_ms": [
+      376.8,
+      235.5,
+      238.1
+    ],
+    "avg_ms": 283.5,
+    "classification": "SERVER COMPUTATION"
+  },
+  "/api/ai/status": {
+    "times_ms": [
+      208.5,
+      379.3,
+      411.9
+    ],
+    "avg_ms": 333.2,
+    "classification": "SERVER COMPUTATION"
+  }
+}

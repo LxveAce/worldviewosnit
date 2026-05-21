@@ -1,0 +1,386 @@
+[
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "Referer spoof",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "Origin spoof",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "X-Forwarded-For localhost",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "X-Forwarded-For loopback",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "X-Real-IP localhost",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "X-Originating-IP",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "X-Custom-IP-Authorization",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "Auth Bearer null",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "Auth Bearer admin",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "Auth Bearer test",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "Auth Basic admin:admin",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Invalid credentials\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "Cookie session",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "X-API-Key test",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "X-Auth-Token admin",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "Content-Type trick",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/telegram/report",
+    "vector": "All combined",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "Referer spoof",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "Origin spoof",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "X-Forwarded-For localhost",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "X-Forwarded-For loopback",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "X-Real-IP localhost",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "X-Originating-IP",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "X-Custom-IP-Authorization",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "Auth Bearer null",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "Auth Bearer admin",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "Auth Bearer test",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "Auth Basic admin:admin",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Invalid credentials\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "Cookie session",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "X-API-Key test",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "X-Auth-Token admin",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "Content-Type trick",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/force",
+    "vector": "All combined",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "Referer spoof",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "Origin spoof",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "X-Forwarded-For localhost",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "X-Forwarded-For loopback",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "X-Real-IP localhost",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "X-Originating-IP",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "X-Custom-IP-Authorization",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "Auth Bearer null",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "Auth Bearer admin",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "Auth Bearer test",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "Auth Basic admin:admin",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Invalid credentials\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "Cookie session",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "X-API-Key test",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "X-Auth-Token admin",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "Content-Type trick",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  },
+  {
+    "endpoint": "/api/ai/toggle",
+    "vector": "All combined",
+    "type": "header",
+    "status": 401,
+    "body": "{\"error\":\"Authentication required\"}",
+    "bypassed": false
+  }
+]

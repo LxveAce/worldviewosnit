@@ -1,0 +1,106 @@
+{
+  "maritime": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?limit=1": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?limit=5": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?limit=100": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?limit=300": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?limit=1000": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?all=true": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?full=true": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?raw=true": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?format=geojson": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?format=csv": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?mmsi=477995030": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?id=477995030": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?history=true": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?verbose=true": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "maritime?debug=true": {
+    "status": 200,
+    "body": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\""
+  },
+  "conflicts": {
+    "status": 200,
+    "zones": 36
+  },
+  "conflicts?region=Ukraine": {
+    "status": 200,
+    "zones": 36
+  },
+  "conflicts?region=Donetsk": {
+    "status": 200,
+    "zones": 36
+  },
+  "conflicts?intensity=CRITICAL": {
+    "status": 200,
+    "zones": 36
+  },
+  "conflicts?type=ACTIVE_COMBAT": {
+    "status": 200,
+    "zones": 36
+  },
+  "conflicts?limit=5": {
+    "status": 200,
+    "zones": 36
+  },
+  "conflicts?limit=100": {
+    "status": 200,
+    "zones": 36
+  },
+  "conflicts?all=true": {
+    "status": 200,
+    "zones": 36
+  },
+  "conflicts?format=geojson": {
+    "status": 200,
+    "zones": 36
+  },
+  "conflicts?debug=true": {
+    "status": 200,
+    "zones": 36
+  }
+}
