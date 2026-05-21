@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WORLDVIEW OSINT | C4ISR v3.2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#020617;--p:rgba(2,6,23,0.94);--bdr:rgba(6,182,212,0.18);--bdr2:rgba(6,182,212,0.35);--c:#06b6d4;--g:#10b981;--r:#ef4444;--a:#f59e0b;--pr:#a855f7;--o:#f97316;--t:#e2e8f0;--t2:#94a3b8;--d:#475569;--d2:#1e293b}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--t);font-family:'JetBrains Mono',monospace;font-size:11px}
+[v-cloak]{display:none}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:var(--bdr2);border-radius:2px}
+#app{display:grid;grid-template-columns:260px 1fr;grid-template-rows:38px 1fr 80px;height:100vh;gap:0}
+.top{grid-column:1/-1;display:flex;align-items:center;padding:0 10px;background:var(--p);border-bottom:1px solid var(--bdr);gap:10px;z-index:200}
+.logo{font-family:'Orbitron',sans-serif;font-weight:900;font-size:12px;letter-spacing:3px;color:var(--c);text-shadow:0 0 10px rgba(6,182,212,0.25);white-space:nowrap}
+.sep{width:1px;height:18px;background:var(--bdr)}
+.ai-sw{display:flex;align-items:center;gap:5px;padding:3px 8px;border:1px solid rgba(168,85,247,0.25);border-radius:3px;cursor:pointer;transition:all .15s;user-select:none}
+.ai-sw:hover{border-color:var(--pr)}.ai-sw.on{border-color:var(--pr);background:rgba(168,85,247,0.1);box-shadow:0 0 8px rgba(168,85,247,0.12)}
+.sw-d{width:6px;height:6px;border-radius:50%;transition:all .2s}
+.sw-d.off{background:var(--d)}.sw-d.on{background:var(--pr);box-shadow:0 0 5px var(--pr);animation:pd 2s infinite}
+.top-r{margin-left:auto;display:flex;align-items:center;gap:12px;font-size:8px;text-transform:uppercase;letter-spacing:1px;color:var(--t2)}
+.dot{width:5px;height:5px;border-radius:50%;display:inline-block;margin-right:3px}
+.dot.on{background:var(--g);box-shadow:0 0 5px var(--g);animation:pd 2s infinite}.dot.off{background:var(--r)}
+@keyframes pd{0%,100%{opacity:1}50%{opacity:.3}}
+.sb{grid-row:2/4;background:var(--p);border-right:1px solid var(--bdr);display:flex;flex-direction:column;overflow:hidden}
+.tabs{display:flex;border-bottom:1px solid var(--bdr);flex-shrink:0}
+.tab{flex:1;padding:6px 0;text-align:center;font-size:7px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--d);cursor:pointer;transition:all .12s;border-bottom:2px solid transparent}
+.tab:hover{color:var(--t2)}.tab.active{color:var(--c);border-bottom-color:var(--c);background:rgba(6,182,212,0.04)}
+.tab-content{flex:1;overflow-y:auto}
+.mc{position:relative;overflow:hidden;grid-row:2/3}
+#map{width:100%;height:100%}
+.bp{grid-column:2;background:var(--p);border-top:1px solid var(--bdr);display:flex;flex-direction:column;overflow:hidden}
+.co{flex:1;overflow-y:auto;padding:3px 8px;font-size:8px;line-height:1.4;color:var(--d)}
+.cl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cl.sys{color:var(--c)}.cl.err{color:var(--r)}.cl.ok{color:var(--g)}
+.map-ov{position:absolute;bottom:4px;left:4px;background:rgba(0,0,0,.8);padding:2px 6px;font-size:8px;color:var(--c);border:1px solid var(--bdr);border-radius:2px;z-index:10}
+.map-legend{position:absolute;top:8px;left:8px;background:rgba(2,6,23,.88);border:1px solid var(--bdr);border-radius:3px;padding:5px 7px;z-index:10;display:flex;flex-wrap:wrap;gap:2px;max-width:360px}
+.leg{display:flex;align-items:center;gap:3px;padding:2px 5px;cursor:pointer;font-size:7px;text-transform:uppercase;letter-spacing:.3px;border-radius:2px;color:var(--t2)}
+.leg:hover{background:rgba(255,255,255,.04)}.leg.off{opacity:.2}
+.leg-d{width:6px;height:6px;border-radius:50%}
+.map-nav{position:absolute;top:8px;right:52px;display:flex;gap:2px;z-index:10}
+.nbtn{padding:3px 7px;font-family:'JetBrains Mono',monospace;font-size:7px;text-transform:uppercase;letter-spacing:.5px;border:1px solid var(--bdr);background:rgba(2,6,23,.85);color:var(--c);cursor:pointer;border-radius:2px}
+.nbtn:hover{background:rgba(6,182,212,.08);border-color:var(--c)}
+.sec{padding:5px 8px;border-bottom:1px solid rgba(6,182,212,0.05)}
+.st{font-family:'Orbitron',sans-serif;font-size:7px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--c);margin-bottom:4px;display:flex;align-items:center;gap:4px}
+.st::before{content:'';width:2px;height:7px;background:var(--c);display:inline-block}
+.st .badge{margin-left:auto;background:rgba(6,182,212,0.08);padding:1px 4px;border-radius:2px;font-family:'JetBrains Mono',monospace;font-size:7px;color:var(--c)}
+.sr{display:flex;justify-content:space-between;align-items:center;padding:2px 0}
+.sl{color:var(--t2);font-size:8px;text-transform:uppercase;letter-spacing:.3px}
+.sv{font-weight:700;font-size:9px;font-variant-numeric:tabular-nums}
+.gauge{width:100%;height:3px;background:rgba(255,255,255,.03);border-radius:2px;margin:2px 0;overflow:hidden}
+.gauge-fill{height:100%;border-radius:2px;transition:width .8s}
+.loss-bar{display:flex;align-items:center;gap:4px;padding:2px 0}
+.lb-l{width:20px;font-weight:700;font-size:9px}.lb-t{flex:1;height:5px;background:rgba(255,255,255,.03);border-radius:3px;overflow:hidden}
+.lb-f{height:100%;border-radius:3px;transition:width .6s}.lb-n{width:22px;text-align:right;font-size:8px;font-weight:700}
+.ai-item{padding:4px 6px;margin-bottom:1px;background:rgba(15,23,42,.3);border-left:2px solid var(--d);font-size:9px;line-height:1.3;cursor:pointer;transition:all .1s}
+.ai-item:hover{background:rgba(15,23,42,.5);border-left-color:var(--c)}
+.ai-item.cr{border-left-color:var(--r)}.ai-item.hi{border-left-color:var(--a)}.ai-item.me{border-left-color:var(--c)}
+.am{font-size:7px;color:var(--d);margin-top:1px;text-transform:uppercase;letter-spacing:.5px}
+.econ-item{padding:3px 6px;margin-bottom:1px;background:rgba(16,185,129,.02);border-left:2px solid var(--g);font-size:8px;line-height:1.3}
+.econ-item.bearish{border-left-color:var(--r)}.econ-item.bearish_ru{border-left-color:var(--a)}
+.etag{display:inline-block;font-size:6px;padding:1px 3px;border-radius:2px;text-transform:uppercase;font-weight:700;margin-right:3px}
+.etag.HIGH{background:rgba(239,68,68,.12);color:var(--r)}.etag.MEDIUM{background:rgba(245,158,11,.08);color:var(--a)}
+.infra-item{padding:3px 6px;margin-bottom:1px;background:rgba(239,68,68,.02);border-left:2px solid var(--o);font-size:8px;line-height:1.3;cursor:pointer}
+.ai-panel{padding:6px;background:linear-gradient(135deg,rgba(168,85,247,0.03),rgba(6,182,212,0.01));border:1px solid rgba(168,85,247,0.1);border-radius:2px;margin:3px 0}
+.ai-panel .ai-text{font-size:8px;line-height:1.5;color:var(--t2);margin:4px 0;white-space:pre-wrap}
+.btn{padding:3px 7px;font-family:'JetBrains Mono',monospace;font-size:7px;text-transform:uppercase;letter-spacing:.8px;border:1px solid var(--bdr);background:transparent;color:var(--c);cursor:pointer}
+.btn:hover{background:rgba(6,182,212,.06);border-color:var(--c)}
+.btn.pr{color:var(--pr);border-color:rgba(168,85,247,.2)}.btn.pr:hover{background:rgba(168,85,247,.05)}
+.scan{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.012) 3px,rgba(0,0,0,.012) 6px)}
+.mapboxgl-popup-content{background:rgba(2,6,23,.95)!important;color:var(--t)!important;border:1px solid var(--bdr2)!important;border-radius:3px!important;padding:8px!important;box-shadow:0 4px 20px rgba(0,0,0,.6)!important}
+.mapboxgl-popup-close-button{color:var(--t2)!important;font-size:14px!important}
+@media(max-width:900px){#app{grid-template-columns:1fr;grid-template-rows:38px 1fr 100px}.sb{display:none}.bp{grid-column:1}}
+</style>
+</head>
+<body>
+<div id="app" v-cloak>
+<div class="scan"></div>
+<header class="top">
+<div class="logo">WORLDVIEW</div><div class="sep"></div>
+<div class="ai-sw" :class="{on:aiStatus.enabled}" @click="toggleAI"><div class="sw-d" :class="aiStatus.enabled?'on':'off'"></div><span style="font-size:8px;letter-spacing:1px;text-transform:uppercase;color:var(--t2)">AI {{ aiStatus.enabled?'ON':'OFF' }}</span><span style="font-size:7px;color:var(--d)">{{ aiStatus.callsToday }}/{{ aiStatus.callsMax }}</span></div>
+<div class="sep"></div>
+<div style="display:flex;gap:3px"><button class="btn pr" @click="runAI" style="font-size:7px">AI BRIEF</button><button class="btn" @click="sendReport" style="font-size:7px">TG REPORT</button></div>
+<div class="top-r"><span><span class="dot" :class="backendStatus==='online'?'on':'off'"></span>{{ backendStatus }}</span><span><span class="dot" :class="aisConnected?'on':'off'" style="margin-right:2px"></span>AIS</span><span>{{ currentTime }}</span><span>{{ mouseCoords.lat }}, {{ mouseCoords.lng }}</span></div>
+</header>
+<aside class="sb">
+<div class="tabs"><div class="tab" :class="{active:activeTab==='intel'}" @click="activeTab='intel'">INTEL</div><div class="tab" :class="{active:activeTab==='losses'}" @click="activeTab='losses'">LOSSES</div><div class="tab" :class="{active:activeTab==='econ'}" @click="activeTab='econ'">ECON</div><div class="tab" :class="{active:activeTab==='ai'}" @click="activeTab='ai'">AI</div></div>
+<div class="tab-content">
+<div v-show="activeTab==='intel'"><div class="sec"><div class="st">Risk<span class="badge">{{ riskData.totalRisk||0 }}/10</span></div><div class="gauge"><div class="gauge-fill" :style="{width:(riskData.totalRisk||0)*10+'%',background:riskData.totalRisk>7?'var(--r)':'var(--a)'}"></div></div><div class="sr"><span class="sl">Status</span><span class="sv" :style="{color:riskData.sysStatus==='OPTIMAL'?'var(--g)':'var(--a)'}">{{ riskData.sysStatus||'---' }}</span></div><div class="sr"><span class="sl">Critical</span><span class="sv" style="color:var(--r)">{{ riskData.criticalAlerts||0 }}</span></div><div class="sr"><span class="sl">Fronts</span><span class="sv" style="color:var(--o)">{{ riskData.activeFronts||0 }}</span></div><div class="sr"><span class="sl">Hotspots</span><span class="sv" style="color:var(--o)">{{ riskData.thermalHotspots||0 }}</span></div></div><div class="sec" style="flex:1;overflow-y:auto"><div class="st">Conflicts<span class="badge">{{ conflicts.length }}</span></div><div v-for="c in conflicts" :key="c.name" class="ai-item" :class="{cr:c.intensity==='CRITICAL',hi:c.intensity==='HIGH',me:c.intensity==='MEDIUM'}" @click="centerMap(c.lon,c.lat,8)"><div style="font-weight:700;font-size:9px">{{ c.name }}</div><div class="am">{{ c.region }} | {{ c.intensity }}</div></div></div><div class="sec"><div class="st">Maritime<span class="badge" :style="{background:aisConnected?'rgba(16,185,129,.1)':'rgba(239,68,68,.1)',color:aisConnected?'var(--g)':'var(--r)'}">{{ aisConnected?'LIVE':'CACHE' }} {{ maritime.length }}</span></div><div v-for="s in maritime.slice(0,8)" :key="s.mmsi||s.id" class="ai-item hi" @click="centerMap(s.lon,s.lat,9)"><div style="font-weight:700;color:var(--a);font-size:9px">{{ s.id }}</div><div class="am">{{ s.flag }} {{ s.type }} | {{ s.speed?s.speed.toFixed(1)+'kn':s.status }}</div></div></div><div class="sec"><div class="st">Security<span class="badge">{{ security.length }}</span></div><div v-for="s in security" :key="s.name" class="ai-item" style="border-left-color:var(--pr)" @click="centerMap(s.lon,s.lat,8)"><span style="color:var(--pr);font-weight:700;font-size:9px">{{ s.name }}</span><div class="am">{{ s.type }} | {{ s.region }}</div></div></div><div class="sec"><div class="st">Disasters<span class="badge">{{ disasters.length }}</span></div><div v-for="d in disasters" :key="d.name" class="ai-item" style="border-left-color:var(--g)" @click="centerMap(d.lon,d.lat,7)"><span style="color:var(--g);font-weight:700;font-size:9px">{{ d.name }}</span><div class="am">{{ d.type }} | {{ d.region }}</div></div></div></div>
+<div v-show="activeTab==='losses'"><div class="sec"><div class="st">Confirmed<span class="badge" style="background:rgba(239,68,68,.08);color:var(--r)">ORYX</span></div><div class="loss-bar"><span class="lb-l" style="color:var(--r)">RU</span><div class="lb-t"><div class="lb-f" style="background:var(--r)" :style="{width:lossesSummary.ru?(lossesSummary.ru.total/20*100)+'%':'0'}"></div></div><span class="lb-n" style="color:var(--r)">{{ lossesSummary.ru?lossesSummary.ru.total:0 }}</span></div><div v-if="lossesSummary.ru" style="padding-left:24px;font-size:7px;color:var(--d)">{{ lossesSummary.ru.destroyed }}D {{ lossesSummary.ru.captured }}C {{ lossesSummary.ru.damaged }}DMG</div><div class="loss-bar"><span class="lb-l" style="color:var(--c)">UA</span><div class="lb-t"><div class="lb-f" style="background:var(--c)" :style="{width:lossesSummary.ua?(lossesSummary.ua.total/20*100)+'%':'0'}"></div></div><span class="lb-n" style="color:var(--c)">{{ lossesSummary.ua?lossesSummary.ua.total:0 }}</span></div><div class="loss-bar"><span class="lb-l" style="color:var(--a)">IL</span><div class="lb-t"><div class="lb-f" style="background:var(--a)" :style="{width:lossesSummary.il?(lossesSummary.il.total/20*100)+'%':'0'}"></div></div><span class="lb-n" style="color:var(--a)">{{ lossesSummary.il?lossesSummary.il.total:0 }}</span></div></div><div class="sec"><div class="st">Equipment<span class="badge">{{ oryx.length }}</span></div><div v-for="o in oryx" :key="o.equipment+o.region" class="ai-item" :class="o.side==='RU'?'cr':'me'" @click="centerMap(o.lon,o.lat,9)"><span :style="{color:o.side==='RU'?'var(--r)':'var(--c)',fontWeight:700}">{{ o.side }}</span> {{ o.equipment }} x{{ o.count }}<div class="am">{{ o.status }} | {{ o.region }}</div></div></div><div class="sec"><div class="st" style="color:var(--o)">Infrastructure<span class="badge" style="background:rgba(249,115,22,.08);color:var(--o)">{{ infra.length }}</span></div><div v-for="t in infra" :key="t.target" class="infra-item" @click="centerMap(t.lon,t.lat,8)"><div style="font-weight:700;font-size:9px">{{ t.target }}</div><div class="am">{{ t.type }} | {{ t.weapon }}</div><div style="font-size:7px;color:var(--t2)">{{ t.impact }}</div></div></div></div>
+<div v-show="activeTab==='econ'"><div class="sec"><div class="st" style="color:var(--g)">Market<span class="badge" style="background:rgba(16,185,129,.08);color:var(--g)">LIVE</span></div><div class="sr"><span class="sl">{{ market.asset||'BTC' }}</span><span class="sv" style="color:var(--g);font-size:11px">{{ market.price?'$'+parseFloat(market.price).toLocaleString('en-US'):'---' }}</span></div></div><div class="sec"><div class="st" style="color:var(--g)">Economic Intel<span class="badge" style="background:rgba(16,185,129,.08);color:var(--g)">{{ econ.length }}</span></div><div v-for="(e,i) in econ" :key="i" class="econ-item" :class="e.sentiment"><span class="etag" :class="e.impact">{{ e.impact }}</span>{{ e.headline }}<div class="am">{{ e.sector }} | {{ e.region }}</div></div></div><div class="sec"><div class="st">Thermal<span class="badge">{{ thermal.length }}</span></div><div v-for="(h,i) in thermal" :key="i" class="ai-item cr" @click="centerMap(h.lon,h.lat,8)">{{ h.type }} @ {{ h.lat.toFixed(2) }}, {{ h.lon.toFixed(2) }}<div class="am">{{ h.source }} | B:{{ h.brightness }} | {{ h.region }}</div></div></div></div>
+<div v-show="activeTab==='ai'"><div class="sec"><div class="st" style="color:var(--pr)">DeepSeek<span class="badge" style="background:rgba(168,85,247,.08);color:var(--pr)">AI</span></div><div class="sr"><span class="sl">Tokens</span><span class="sv" style="color:var(--d)">{{ aiStatus.totalTokens||0 }}</span></div><div class="sr"><span class="sl">Cost</span><span class="sv" style="color:var(--d)">${{ aiStatus.estimatedCostUSD||'0' }}</span></div><div v-if="aiStatus.lastAnalysis" class="ai-panel"><div style="font-size:6px;color:var(--pr);text-transform:uppercase;letter-spacing:1px;font-weight:700">Briefing</div><div class="ai-text">{{ aiStatus.lastAnalysis }}</div><div style="font-size:7px;color:var(--d)">{{ fmt(aiStatus.lastTime) }}</div></div><div v-else style="color:var(--d);font-size:8px;padding:6px 0">Click AI BRIEF in topbar.</div><button class="btn pr" @click="runAI" style="width:100%;margin-top:4px">RUN ANALYSIS</button></div><div class="sec"><div class="st" style="color:#ff6b35">Military Aircraft<span class="badge" style="background:rgba(255,107,53,.1);color:#ff6b35">{{ milAviation.length }}</span></div>
+<div v-if="milAviation.length===0" style="color:var(--d);font-size:8px;padding:4px">Scanning transponders...</div>
+<div v-for="a in milAviation.slice(0,20)" :key="a.icao24||a.callsign" class="ai-item" style="border-left-color:#ff6b35" @click="centerMap(a.lon,a.lat,8)">
+<div><span style="color:#ff6b35;font-weight:700">{{ a.callsign }}</span> <span style="font-size:7px;color:var(--d)">{{ a.acType }}</span></div>
+<div class="am">ALT:{{ a.alt }}m HDG:{{ a.heading }} VEL:{{ a.vel }}m/s | {{ a.country }}</div>
+</div></div>
+<div class="sec"><div class="st">Civilian Traffic<span class="badge">{{ civAviation.length }}</span></div>
+<div v-for="a in civAviation.slice(0,10)" :key="a.callsign" class="ai-item" style="border-left-color:var(--c)" @click="centerMap(a.lon,a.lat,8)">
+<span style="color:var(--c);font-weight:700">{{ a.callsign }}</span><span class="am" style="margin-left:3px">ALT:{{ a.alt }}m {{ a.country }}</span>
+</div></div></div>
+</div>
+</aside>
+<main class="mc"><div id="map"></div>
+<div class="map-legend"><div class="leg" :class="{off:!vl.conflict}" @click="toggleLayer('conflict')"><div class="leg-d" style="background:#ef4444"></div>Conflicts</div><div class="leg" :class="{off:!vl.thermal}" @click="toggleLayer('thermal')"><div class="leg-d" style="background:#f97316"></div>FIRMS</div><div class="leg" :class="{off:!vl.aviation}" @click="toggleLayer('aviation')"><div class="leg-d" style="background:#06b6d4"></div>Aviation</div><div class="leg" :class="{off:!vl.maritime}" @click="toggleLayer('maritime')"><div class="leg-d" style="background:#eab308"></div>Maritime</div><div class="leg" :class="{off:!vl.security}" @click="toggleLayer('security')"><div class="leg-d" style="background:#a855f7"></div>Terror</div><div class="leg" :class="{off:!vl.oryx}" @click="toggleLayer('oryx')"><div class="leg-d" style="background:#f1f5f9"></div>Oryx</div><div class="leg" :class="{off:!vl.disaster}" @click="toggleLayer('disaster')"><div class="leg-d" style="background:#22c55e"></div>Disasters</div><div class="leg" :class="{off:!vl['mil-aviation']}" @click="toggleLayer('mil-aviation')"><div class="leg-d" style="background:#ff6b35"></div>Military</div></div>
+<div class="map-nav"><button class="nbtn" @click="flyToGlobal">GLOBAL</button><button class="nbtn" @click="flyToUkraine">UKR</button><button class="nbtn" @click="flyToGaza">GAZA</button><button class="nbtn" @click="flyToSudan">SUDAN</button><button class="nbtn" @click="flyToRedSea">RED SEA</button><button class="nbtn" @click="flyToAmericas">AMERICAS</button><button class="nbtn" @click="flyToColombia">COL</button></div>
+<div class="map-ov">{{ mouseCoords.lat }}, {{ mouseCoords.lng }} | Z{{ mapZoom }} | {{ totalFeatures }} features</div>
+</main>
+<div class="bp"><div style="padding:2px 8px;border-bottom:1px solid var(--bdr)"><span style="font-family:'Orbitron';font-size:7px;color:var(--c);letter-spacing:1px">CONSOLE</span></div><div class="co" ref="con"><div v-for="(l,i) in consoleLogs" :key="i" class="cl" :class="l.type">{{ l.text }}</div></div></div>
+</div>
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="app.js"></script>
+</body></html>

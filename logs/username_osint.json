@@ -1,0 +1,115 @@
+{
+  "username": "juanes2794",
+  "total_tested": 45,
+  "found": [
+    {
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/user/juanes2794",
+      "status": 200
+    },
+    {
+      "platform": "Twitch",
+      "url": "https://www.twitch.tv/juanes2794",
+      "status": 200
+    },
+    {
+      "platform": "PyPI",
+      "url": "https://pypi.org/user/juanes2794/",
+      "status": 200
+    },
+    {
+      "platform": "Kaggle",
+      "url": "https://www.kaggle.com/juanes2794",
+      "status": 200
+    },
+    {
+      "platform": "Steam",
+      "url": "https://steamcommunity.com/id/juanes2794",
+      "status": 200
+    },
+    {
+      "platform": "Signal",
+      "url": "https://signal.me/#juanes2794",
+      "status": 200
+    },
+    {
+      "platform": "Discord (via search)",
+      "url": "https://discord.com/users/juanes2794",
+      "status": 200
+    },
+    {
+      "platform": "Threads",
+      "url": "https://www.threads.net/@juanes2794",
+      "status": 200
+    },
+    {
+      "platform": "Tryhackme",
+      "url": "https://tryhackme.com/p/juanes2794",
+      "status": 200
+    },
+    {
+      "platform": "HackTheBox",
+      "url": "https://app.hackthebox.com/users/juanes2794",
+      "status": 200
+    }
+  ],
+  "not_found_count": 24,
+  "errors": [
+    {
+      "platform": "Twitter/X",
+      "url": "https://x.com/juanes2794",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/juanes2794/",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/@juanes2794",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/@juanes2794",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "platform": "Pinterest",
+      "url": "https://www.pinterest.com/juanes2794/",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "platform": "Hackernews",
+      "url": "https://news.ycombinator.com/user?id=juanes2794",
+      "status": 429,
+      "note": "rate limited"
+    },
+    {
+      "platform": "SourceForge",
+      "url": "https://sourceforge.net/u/juanes2794/",
+      "error": "<urlopen error [WinError 10054] An existing connection was f"
+    },
+    {
+      "platform": "Flickr",
+      "url": "https://www.flickr.com/people/juanes2794/",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "platform": "Spotify",
+      "url": "https://open.spotify.com/user/juanes2794",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "platform": "Telegram",
+      "url": "https://t.me/juanes2794",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/juanes2794",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    }
+  ]
+}

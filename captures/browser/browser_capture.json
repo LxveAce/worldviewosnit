@@ -1,0 +1,1202 @@
+{
+  "timestamp": "2026-05-21T17:21:48.670Z",
+  "target": "https://worldviewosint.com",
+  "summary": {
+    "total_requests": 98,
+    "api_requests": 42,
+    "websocket_frames": 0,
+    "console_messages": 4,
+    "cookies": 1,
+    "mapbox_requests": 38,
+    "request_types": {
+      "document": 1,
+      "stylesheet": 2,
+      "script": 10,
+      "font": 5,
+      "fetch": 36,
+      "xhr": 44
+    }
+  },
+  "storage": {
+    "localStorage": {
+      "mapbox.eventData.uuid:anVhbmVzMjc5NA==": "null",
+      "mapbox.eventData:anVhbmVzMjc5NA==": "{\"lastSuccess\":1779384012041,\"tokenU\":\"juanes2794\"}"
+    },
+    "sessionStorage": {}
+  },
+  "cookies": [
+    {
+      "name": "cf_clearance",
+      "value": "[REDACTED — Cloudflare cf_clearance session token]",
+      "domain": ".worldviewosint.com",
+      "path": "/",
+      "expires": 1810920012.707858,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://worldviewosint.com",
+      "_crHasCrossSiteAncestor": false
+    }
+  ],
+  "app_state": {
+    "hasVueApp": false
+  },
+  "console_panel": "Console panel not found",
+  "api_requests": [
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/risk-summary",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.803Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/conflicts",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.803Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/thermal",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.804Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/oryx",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.804Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/maritime",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.804Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/security",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.804Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/disasters",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.804Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.809Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/portfolio",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/losses",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/economic",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/infra",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/ai/status",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:39.963Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/risk-summary",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/conflicts",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/thermal",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/oryx",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/maritime",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/security",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/disasters",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.989Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/portfolio",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.989Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/losses",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.989Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/economic",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.990Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/infra",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.990Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/ai/status",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.990Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:09.969Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/risk-summary",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/conflicts",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/thermal",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/oryx",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/maritime",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/security",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/disasters",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/portfolio",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/losses",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/economic",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/infra",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.997Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/ai/status",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.999Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:40.001Z"
+    }
+  ],
+  "websocket_frames": [],
+  "console_log": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x154400192000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "timestamp": "2026-05-21T17:20:10.296Z"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x154400192000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "timestamp": "2026-05-21T17:20:11.647Z"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x154400192000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "timestamp": "2026-05-21T17:20:12.029Z"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x154400192000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+      "timestamp": "2026-05-21T17:20:12.831Z"
+    }
+  ],
+  "mapbox_requests": [
+    {
+      "url": "https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css",
+      "type": "stylesheet",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js",
+      "type": "script",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/styles/v1/mapbox/dark-v11?sdk=js-3.1.2&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2.json?secure&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/styles/v1/mapbox/dark-v11/sprite.json?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/styles/v1/mapbox/dark-v11/sprite.png?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://events.mapbox.com/events/v2?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 204
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/4/2.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/4/3.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/5/2.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/3/2.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/6/2.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/6/4.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/2/2.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/2/1/0.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/5/3.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/3/3.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/6/3.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/3/4.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/2/3.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/2/2/0.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/2/3/0.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Italic,Arial%20Unicode%20MS%20Regular/0-255.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Regular,Arial%20Unicode%20MS%20Regular/0-255.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Regular,Arial%20Unicode%20MS%20Regular/8192-8447.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Medium,Arial%20Unicode%20MS%20Regular/0-255.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Bold,Arial%20Unicode%20MS%20Bold/0-255.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Regular,Arial%20Unicode%20MS%20Regular/256-511.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Regular,Arial%20Unicode%20MS%20Regular/512-767.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Medium,Arial%20Unicode%20MS%20Regular/8192-8447.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-terrain-dem-v1.json?secure&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://events.mapbox.com/events/v2?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 204
+    },
+    {
+      "url": "https://events.mapbox.com/events/v2?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 204
+    },
+    {
+      "url": "https://api.mapbox.com/map-sessions/v1?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/raster/v1/mapbox.mapbox-terrain-dem-v1/1/1/0.webp?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/raster/v1/mapbox.mapbox-terrain-dem-v1/1/0/0.webp?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/raster/v1/mapbox.mapbox-terrain-dem-v1/1/1/1.webp?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    },
+    {
+      "url": "https://api.mapbox.com/raster/v1/mapbox.mapbox-terrain-dem-v1/1/0/1.webp?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200
+    }
+  ],
+  "network_log": [
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/",
+      "type": "document",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:01.418Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Orbitron:wght@400;700;900&display=swap",
+      "type": "stylesheet",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:05.557Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css",
+      "type": "stylesheet",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:05.557Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js",
+      "type": "script",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:05.606Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://unpkg.com/vue@3/dist/vue.global.prod.js",
+      "type": "script",
+      "status": 302,
+      "timestamp": "2026-05-21T17:20:05.606Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js",
+      "type": "script",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:05.607Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/app.js",
+      "type": "script",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:05.607Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447",
+      "type": "script",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:05.607Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/orbitron/v35/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nysimxpg.ttf",
+      "type": "font",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:09.301Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPQ.ttf",
+      "type": "font",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:09.302Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8L6tjPQ.ttf",
+      "type": "font",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:09.302Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/orbitron/v35/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1ny_Cmxpg.ttf",
+      "type": "font",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:09.303Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://fonts.gstatic.com/s/orbitron/v35/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6xpg.ttf",
+      "type": "font",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:09.303Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://unpkg.com/vue@3.5.34/dist/vue.global.prod.js",
+      "type": "script",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:09.313Z"
+    },
+    {
+      "method": "GET",
+      "url": "blob:https://worldviewosint.com/549327c8-368a-42c8-bb31-dac764f74a45",
+      "type": "script",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:09.886Z"
+    },
+    {
+      "method": "GET",
+      "url": "blob:https://worldviewosint.com/549327c8-368a-42c8-bb31-dac764f74a45",
+      "type": "script",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:09.890Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/styles/v1/mapbox/dark-v11?sdk=js-3.1.2&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:10.008Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+      "type": "script",
+      "status": 302,
+      "timestamp": "2026-05-21T17:20:10.349Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2.json?secure&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:10.413Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/styles/v1/mapbox/dark-v11/sprite.json?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:10.414Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/styles/v1/mapbox/dark-v11/sprite.png?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:10.414Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://worldviewosint.com/cdn-cgi/rum?",
+      "type": "xhr",
+      "status": 204,
+      "timestamp": "2026-05-21T17:20:10.445Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/cdn-cgi/challenge-platform/h/b/scripts/jsd/1eec422858ff/main.js?",
+      "type": "script",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:11.645Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://events.mapbox.com/events/v2?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 204,
+      "timestamp": "2026-05-21T17:20:12.090Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/4/2.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.160Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/4/3.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/5/2.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/3/2.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/6/2.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/6/4.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/2/2.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/2/1/0.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/5/3.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/3/3.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/6/3.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/3/4.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/3/2/3.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.170Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/2/2/0.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.171Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox.mapbox-bathymetry-v2/2/3/0.vector.pbf?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.171Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://worldviewosint.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/1eec422858ff/0.8947258772151155:1779383289:IWCgXpkfYp8gIyN6PVxWzWohSUSAjWVHCDPVFL2Xo7E/9ff53fef8f9fb06e",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:12.460Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/risk-summary",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.803Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/conflicts",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.803Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/thermal",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.804Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/oryx",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.804Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/maritime",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.804Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/security",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.804Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/disasters",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.804Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.809Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/portfolio",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/losses",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/economic",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/infra",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/ai/status",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Italic,Arial%20Unicode%20MS%20Regular/0-255.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.810Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Regular,Arial%20Unicode%20MS%20Regular/0-255.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.811Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Regular,Arial%20Unicode%20MS%20Regular/8192-8447.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.811Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Medium,Arial%20Unicode%20MS%20Regular/0-255.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.811Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Bold,Arial%20Unicode%20MS%20Bold/0-255.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:13.811Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Regular,Arial%20Unicode%20MS%20Regular/256-511.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:14.337Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Regular,Arial%20Unicode%20MS%20Regular/512-767.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:14.338Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/fonts/v1/mapbox/DIN%20Pro%20Medium,Arial%20Unicode%20MS%20Regular/8192-8447.pbf?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:14.338Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/v4/mapbox.mapbox-terrain-dem-v1.json?secure&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:18.044Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://events.mapbox.com/events/v2?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 204,
+      "timestamp": "2026-05-21T17:20:20.627Z"
+    },
+    {
+      "method": "POST",
+      "url": "https://events.mapbox.com/events/v2?access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 204,
+      "timestamp": "2026-05-21T17:20:20.627Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/map-sessions/v1?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:20.959Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/raster/v1/mapbox.mapbox-terrain-dem-v1/1/1/0.webp?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:20.966Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/raster/v1/mapbox.mapbox-terrain-dem-v1/1/0/0.webp?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:20.973Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/raster/v1/mapbox.mapbox-terrain-dem-v1/1/1/1.webp?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:20.973Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://api.mapbox.com/raster/v1/mapbox.mapbox-terrain-dem-v1/1/0/1.webp?sku=101OxTOfKXD7i&access_token=[REDACTED]",
+      "type": "fetch",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:20.973Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:39.963Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/risk-summary",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/conflicts",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/thermal",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/oryx",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/maritime",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/security",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/disasters",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.987Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.989Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/portfolio",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.989Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/losses",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.989Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/economic",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.990Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/infra",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.990Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/ai/status",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:20:54.990Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:09.969Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/risk-summary",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/conflicts",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/thermal",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/oryx",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/maritime",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/security",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/disasters",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/portfolio",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/losses",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/economic",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.996Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/infra",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.997Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/ai/status",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:39.999Z"
+    },
+    {
+      "method": "GET",
+      "url": "https://worldviewosint.com/api/osint/aviation",
+      "type": "xhr",
+      "status": 200,
+      "timestamp": "2026-05-21T17:21:40.001Z"
+    }
+  ]
+}
