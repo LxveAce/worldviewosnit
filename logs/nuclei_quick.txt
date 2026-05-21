@@ -1,0 +1,10 @@
+[waf-detect:cloudflare] [http] [info] https://worldviewosint.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://worldviewosint.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://worldviewosint.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://worldviewosint.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://worldviewosint.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://worldviewosint.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://worldviewosint.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://worldviewosint.com
+[xss-deprecated-header] [http] [info] https://worldviewosint.com ["1; mode=block"]
+[tech-detect:cloudflare] [http] [info] https://worldviewosint.com

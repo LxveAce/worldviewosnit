@@ -667,7 +667,8 @@ Checks for:
 | **localStorage leaks Mapbox user** | Base64 key `anVhbmVzMjc5NA==` = `juanes2794`, tokenU field explicit |
 | **Only cookie is cf_clearance** | No application session management — zero app cookies |
 | **Developer is cybersecurity practitioner** | TryHackMe + HackTheBox accounts confirm security background |
-| **Developer profile: data science** | Kaggle + PyPI presence, Python developer, Colombian origin |
+| **Developer real name: Esteban Gallego** | Threads @juanes2794 = "Esteban Gallego", 62 followers, linked Instagram |
+| **5 false positives in username scan** | Kaggle (404), Steam (not found), PyPI, Signal, Discord — all non-existent |
 | **Port scan: standard CF** | Only 443 serves content; HTTP ports redirect; alt HTTPS ports timeout |
 | **Origin IP fully hidden** | 60 subdomains, IPv6, DNS history, CT logs, error probes — all clean |
 
