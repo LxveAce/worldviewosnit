@@ -1,0 +1,94 @@
+{
+  "ports": {
+    "https_443": {
+      "status": "open",
+      "first_line": "HTTP/1.1 200 OK",
+      "api_responds": true
+    },
+    "https_2053": {
+      "status": "timeout"
+    },
+    "https_2083": {
+      "status": "timeout"
+    },
+    "https_2087": {
+      "status": "timeout"
+    },
+    "https_2096": {
+      "status": "timeout"
+    },
+    "https_8443": {
+      "status": "timeout"
+    },
+    "http_80": {
+      "status": "open",
+      "first_line": "HTTP/1.1 301 Moved Permanently"
+    },
+    "http_8080": {
+      "status": "open",
+      "first_line": "HTTP/1.1 301 Moved Permanently"
+    },
+    "http_8880": {
+      "status": "open",
+      "first_line": "HTTP/1.1 301 Moved Permanently"
+    },
+    "http_2052": {
+      "status": "open",
+      "first_line": "HTTP/1.1 301 Moved Permanently"
+    },
+    "http_2082": {
+      "status": "open",
+      "first_line": "HTTP/1.1 301 Moved Permanently"
+    },
+    "http_2086": {
+      "status": "open",
+      "first_line": "HTTP/1.1 301 Moved Permanently"
+    },
+    "http_2095": {
+      "status": "open",
+      "first_line": "HTTP/1.1 301 Moved Permanently"
+    },
+    "other_21": {
+      "status": "timeout"
+    },
+    "other_22": {
+      "status": "timeout"
+    },
+    "other_25": {
+      "status": "timeout"
+    },
+    "other_110": {
+      "status": "timeout"
+    },
+    "other_143": {
+      "status": "timeout"
+    },
+    "other_993": {
+      "status": "timeout"
+    },
+    "other_995": {
+      "status": "timeout"
+    },
+    "other_3000": {
+      "status": "timeout"
+    },
+    "other_3306": {
+      "status": "timeout"
+    },
+    "other_5432": {
+      "status": "timeout"
+    },
+    "other_6379": {
+      "status": "timeout"
+    },
+    "other_8000": {
+      "status": "timeout"
+    },
+    "other_8888": {
+      "status": "timeout"
+    },
+    "other_9090": {
+      "status": "timeout"
+    }
+  }
+}

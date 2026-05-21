@@ -1,0 +1,70 @@
+{
+  "certspotter": [
+    {
+      "id": "14294741495",
+      "tbs_sha256": "9a1311496b7b37794c62796dff32ac9da7b1bdd77e13bdb06ab3a0fe12ef1b6c",
+      "cert_sha256": "b3c15b384efdfb9e2de676573f4ceddd678849dad785805fdf1c0091fc68f8db",
+      "dns_names": [
+        "*.worldviewosint.com",
+        "worldviewosint.com"
+      ],
+      "pubkey_sha256": "6e4095e96f3b6806cf753ad45b05401e5440b99ce505b7f1d552d85415a79f11",
+      "not_before": "2026-03-28T18:11:17Z",
+      "not_after": "2026-06-26T18:11:16Z",
+      "revoked": false
+    },
+    {
+      "id": "14294766679",
+      "tbs_sha256": "e2e98555a9c42c1d715ac2cc36857feea3b409a46fa66939f9424d9813f201a9",
+      "cert_sha256": "65df2a402c7aa1033ec344551aa36cfa2c9df2023fbce8e3c6f6594f005ec860",
+      "dns_names": [
+        "*.worldviewosint.com",
+        "worldviewosint.com"
+      ],
+      "pubkey_sha256": "ce4d4851df8479c004b0f3711306c520de68efaa8a1ad116ce8d321952af7099",
+      "not_before": "2026-03-28T00:00:00Z",
+      "not_after": "2026-06-26T19:07:31Z",
+      "revoked": false
+    }
+  ],
+  "google_ct": "HTTP 404",
+  "censys": "requires_auth",
+  "shodan": {
+    "queries": [
+      "http.title:\"WORLDVIEW OSINT\"",
+      "http.html:\"C4ISR v3.2\"",
+      "http.html:\"worldviewosint\"",
+      "ssl.cert.subject.cn:\"worldviewosint.com\"",
+      "port:7474 neo4j"
+    ],
+    "status": "requires_api_key"
+  },
+  "fofa": {
+    "queries": [
+      "title=\"WORLDVIEW OSINT\"",
+      "body=\"C4ISR v3.2\"",
+      "body=\"worldviewosint\"",
+      "cert=\"worldviewosint.com\""
+    ]
+  },
+  "urlscan": {
+    "results": [],
+    "total": 0,
+    "took": 240,
+    "has_more": false
+  },
+  "wayback_available": {
+    "url": "worldviewosint.com",
+    "archived_snapshots": {}
+  },
+  "securitytrails": "requires_api_key",
+  "error_ip_leak": {
+    "status": 404,
+    "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/health</pre>\n<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'9ff4f2b7c820d608',t:'MTc3OTM4MDg0Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElements",
+    "ips_found": []
+  },
+  "invalid_host": {
+    "status": 403,
+    "body": "<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n"
+  }
+}
