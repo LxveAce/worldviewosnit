@@ -1,0 +1,105 @@
+{
+  "status": "ACTIVE",
+  "incidents": [
+    {
+      "lat": 36.19,
+      "lon": 44.01,
+      "name": "Erbil Drone Attack",
+      "type": "DRONE",
+      "target": "Military base",
+      "casualties": "None",
+      "date": "2026-03-15",
+      "region": "Iraq"
+    },
+    {
+      "lat": 33.31,
+      "lon": 44.37,
+      "name": "Baghdad IED",
+      "type": "IED",
+      "target": "Convoy",
+      "casualties": "3 injured",
+      "date": "2026-03-20",
+      "region": "Iraq"
+    },
+    {
+      "lat": 6.45,
+      "lon": 3.4,
+      "name": "Lagos Kidnapping",
+      "type": "KIDNAP",
+      "target": "Civilian",
+      "casualties": "5 hostages",
+      "date": "2026-03-18",
+      "region": "Nigeria"
+    },
+    {
+      "lat": 1.29,
+      "lon": 36.82,
+      "name": "Kenya Border",
+      "type": "AL_SHABAAB",
+      "target": "Patrol",
+      "casualties": "2 KIA",
+      "date": "2026-03-22",
+      "region": "Kenya"
+    },
+    {
+      "lat": 34.8,
+      "lon": 67.83,
+      "name": "Bamyan",
+      "type": "ISISK",
+      "target": "Checkpoint",
+      "casualties": "4 KIA",
+      "date": "2026-03-19",
+      "region": "Afghanistan"
+    },
+    {
+      "lat": 26.07,
+      "lon": 56.35,
+      "name": "Hormuz Strait",
+      "type": "SEIZURE",
+      "target": "Tanker",
+      "casualties": "Crew held",
+      "date": "2026-03-25",
+      "region": "Iran"
+    },
+    {
+      "lat": 8.5,
+      "lon": -77,
+      "name": "Darien Drug Seizure",
+      "type": "NARCO_INTERCEPT",
+      "target": "2.5T cocaine",
+      "casualties": "6 arrested",
+      "date": "2026-03-22",
+      "region": "Panama"
+    },
+    {
+      "lat": 25.77,
+      "lon": -80.19,
+      "name": "Miami Port Seizure",
+      "type": "NARCO_INTERCEPT",
+      "target": "Cargo vessel",
+      "casualties": "Fentanyl 500kg",
+      "date": "2026-03-20",
+      "region": "USA"
+    },
+    {
+      "lat": 18.2,
+      "lon": -66.5,
+      "name": "PR Coast Guard Op",
+      "type": "MARITIME_INTERDICTION",
+      "target": "Go-fast boat",
+      "casualties": "4 detained",
+      "date": "2026-03-24",
+      "region": "Puerto Rico"
+    },
+    {
+      "lat": -2.17,
+      "lon": -79.92,
+      "name": "Guayaquil Prison Riot",
+      "type": "GANG_VIOLENCE",
+      "target": "Prison",
+      "casualties": "12 KIA",
+      "date": "2026-03-23",
+      "region": "Ecuador"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "status": "ACTIVE",
+  "news": [
+    {
+      "headline": "EU approves 14th sanctions package targeting RU oil revenue",
+      "impact": "HIGH",
+      "sector": "ENERGY",
+      "region": "EU/Russia",
+      "sentiment": "bearish_ru"
+    },
+    {
+      "headline": "US Fed holds rates steady, signals June cut possible",
+      "impact": "HIGH",
+      "sector": "MONETARY",
+      "region": "Global",
+      "sentiment": "bullish"
+    },
+    {
+      "headline": "Red Sea shipping insurance premiums up 300% YoY",
+      "impact": "MEDIUM",
+      "sector": "TRADE",
+      "region": "Middle East",
+      "sentiment": "bearish"
+    },
+    {
+      "headline": "Ukraine grain corridor deal extended 60 days",
+      "impact": "MEDIUM",
+      "sector": "AGRICULTURE",
+      "region": "Ukraine/Global",
+      "sentiment": "bullish"
+    },
+    {
+      "headline": "Defense stocks rally: LMT +4.2%, RTX +3.8% on NATO spending",
+      "impact": "MEDIUM",
+      "sector": "DEFENSE",
+      "region": "US/NATO",
+      "sentiment": "bullish"
+    },
+    {
+      "headline": "Rare earth export controls tightened by China",
+      "impact": "HIGH",
+      "sector": "TECH",
+      "region": "China/Global",
+      "sentiment": "bearish"
+    },
+    {
+      "headline": "Colombia peso rallies on oil exports recovery",
+      "impact": "MEDIUM",
+      "sector": "COMMODITIES",
+      "region": "Colombia",
+      "sentiment": "bullish"
+    },
+    {
+      "headline": "US-Mexico border wall funding expanded $3.2B",
+      "impact": "MEDIUM",
+      "sector": "DEFENSE",
+      "region": "US/Mexico",
+      "sentiment": "bullish"
+    },
+    {
+      "headline": "Brazil Amazon carbon credits program launches",
+      "impact": "MEDIUM",
+      "sector": "ENVIRONMENT",
+      "region": "Brazil",
+      "sentiment": "bullish"
+    },
+    {
+      "headline": "Venezuela sanctions eased for oil-for-food deal",
+      "impact": "HIGH",
+      "sector": "ENERGY",
+      "region": "Venezuela",
+      "sentiment": "bullish"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "sysStatus": "OPTIMAL",
+  "totalRisk": 7.8,
+  "criticalAlerts": 5,
+  "activeFronts": 14,
+  "monitoredVessels": 8,
+  "thermalHotspots": 12,
+  "confirmedLosses": 21,
+  "infraHits": 10,
+  "aisConnected": true,
+  "aisVessels": 269,
+  "lastUpdate": "2026-05-21T12:20:56.398Z"
+}

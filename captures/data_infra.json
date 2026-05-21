@@ -1,0 +1,107 @@
+{
+  "status": "ACTIVE",
+  "targets": [
+    {
+      "lat": 50.45,
+      "lon": 30.52,
+      "target": "Kyiv Power Grid",
+      "type": "ENERGY",
+      "status": "DAMAGED",
+      "weapon": "Shahed-136",
+      "date": "2026-03-27",
+      "impact": "Partial blackout, 200k affected"
+    },
+    {
+      "lat": 48.46,
+      "lon": 35.04,
+      "target": "Dnipro Bridge",
+      "type": "TRANSPORT",
+      "status": "DESTROYED",
+      "weapon": "Iskander-M",
+      "date": "2026-03-26",
+      "impact": "Supply route cut"
+    },
+    {
+      "lat": 46.48,
+      "lon": 30.73,
+      "target": "Odesa Port Terminal",
+      "type": "LOGISTICS",
+      "status": "DAMAGED",
+      "weapon": "Kalibr",
+      "date": "2026-03-25",
+      "impact": "Grain exports delayed"
+    },
+    {
+      "lat": 49.84,
+      "lon": 24.03,
+      "target": "Lviv Substation",
+      "type": "ENERGY",
+      "status": "DAMAGED",
+      "weapon": "Kh-101",
+      "date": "2026-03-24",
+      "impact": "Grid instability western UA"
+    },
+    {
+      "lat": 55.75,
+      "lon": 49.13,
+      "target": "Tatarstan Refinery",
+      "type": "ENERGY",
+      "status": "DAMAGED",
+      "weapon": "UAV strike",
+      "date": "2026-03-26",
+      "impact": "Production -15%"
+    },
+    {
+      "lat": 51.67,
+      "lon": 39.21,
+      "target": "Voronezh Fuel Depot",
+      "type": "ENERGY",
+      "status": "DESTROYED",
+      "weapon": "UAV swarm",
+      "date": "2026-03-27",
+      "impact": "Logistics disruption"
+    },
+    {
+      "lat": 31.4,
+      "lon": 34.38,
+      "target": "Gaza Hospital Complex",
+      "type": "MEDICAL",
+      "status": "DAMAGED",
+      "weapon": "Airstrike",
+      "date": "2026-03-26",
+      "impact": "Capacity reduced 60%"
+    },
+    {
+      "lat": 15.6,
+      "lon": 32.53,
+      "target": "Khartoum Water Plant",
+      "type": "WATER",
+      "status": "DESTROYED",
+      "weapon": "Artillery",
+      "date": "2026-03-25",
+      "impact": "500k without water"
+    },
+    {
+      "lat": 7.1,
+      "lon": -73.12,
+      "name": "Cano Limon Pipeline",
+      "target": "Cano Limon Pipeline",
+      "type": "ENERGY",
+      "status": "DAMAGED",
+      "weapon": "ELN sabotage",
+      "date": "2026-03-22",
+      "impact": "Oil production -30k bpd"
+    },
+    {
+      "lat": 18.53,
+      "lon": -72.34,
+      "name": "PAP Water System",
+      "target": "Port-au-Prince Water",
+      "type": "WATER",
+      "status": "COLLAPSED",
+      "weapon": "Gang seizure",
+      "date": "2026-03-20",
+      "impact": "2M without clean water"
+    }
+  ]
+}

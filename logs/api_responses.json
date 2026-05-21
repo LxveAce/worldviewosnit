@@ -1,0 +1,1090 @@
+{
+  "/api/health": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "status": "OK",
+      "v": "6.0.0",
+      "up": 4576493.311582259,
+      "mem": "295MB",
+      "aisConnected": true,
+      "aisVessels": 269
+    }
+  },
+  "/api/risk-summary": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "sysStatus": "OPTIMAL",
+      "totalRisk": 7.8,
+      "criticalAlerts": 5,
+      "activeFronts": 14,
+      "monitoredVessels": 8,
+      "thermalHotspots": 12,
+      "confirmedLosses": 21,
+      "infraHits": 10,
+      "aisConnected": true,
+      "aisVessels": 269,
+      "lastUpdate": "2026-05-21T12:20:00.305Z"
+    }
+  },
+  "/api/osint/conflicts": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "status": "ACTIVE",
+      "zones": [
+        {
+          "lat": 48.14,
+          "lon": 37.74,
+          "name": "Avdiivka Sector",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "CRITICAL",
+          "description": "Mechanized assault, heavy RU losses",
+          "region": "Donetsk"
+        },
+        {
+          "lat": 48.58,
+          "lon": 37.98,
+          "name": "Bakhmut-Chasiv Yar",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "HIGH",
+          "description": "Urban assault operations",
+          "region": "Donetsk"
+        },
+        {
+          "lat": 47.84,
+          "lon": 35.14,
+          "name": "Zaporizhzhia Line",
+          "type": "FORTIFIED",
+          "intensity": "MEDIUM",
+          "description": "Defensive ops",
+          "region": "Zaporizhzhia"
+        },
+        {
+          "lat": 46.63,
+          "lon": 32.62,
+          "name": "Kherson Bridgehead",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "HIGH",
+          "description": "Cross-river ops",
+          "region": "Kherson"
+        },
+        {
+          "lat": 50.45,
+          "lon": 36.25,
+          "name": "Kharkiv Defense",
+          "type": "AIR_DEFENSE",
+          "intensity": "HIGH",
+          "description": "S-300/Patriot zone",
+          "region": "Kharkiv"
+        },
+        {
+          "lat": 48.46,
+          "lon": 35.04,
+          "name": "Dnipro Shield",
+          "type": "AIR_DEFENSE",
+          "intensity": "MEDIUM",
+          "description": "Multi-layer AD",
+          "region": "Dnipro"
+        },
+        {
+          "lat": 51.5,
+          "lon": 31.3,
+          "name": "Chernihiv Drones",
+          "type": "DRONE_WARFARE",
+          "intensity": "MEDIUM",
+          "description": "FPV drone ops",
+          "region": "Chernihiv"
+        },
+        {
+          "lat": 48.72,
+          "lon": 37.56,
+          "name": "Toretsk Salient",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "HIGH",
+          "description": "Urban infantry",
+          "region": "Donetsk"
+        },
+        {
+          "lat": 49.1,
+          "lon": 38.1,
+          "name": "Lyman Direction",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "MEDIUM",
+          "description": "Positional warfare",
+          "region": "Donetsk"
+        },
+        {
+          "lat": 47.1,
+          "lon": 35.7,
+          "name": "Melitopol Rear",
+          "type": "PARTISAN",
+          "intensity": "LOW",
+          "description": "Resistance ops",
+          "region": "Zaporizhzhia"
+        },
+        {
+          "lat": 31.42,
+          "lon": 34.35,
+          "name": "Gaza North",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "CRITICAL",
+          "description": "Urban ops, humanitarian crisis",
+          "region": "Gaza"
+        },
+        {
+          "lat": 31.35,
+          "lon": 34.3,
+          "name": "Khan Younis",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "HIGH",
+          "description": "IDF ground ops",
+          "region": "Gaza"
+        },
+        {
+          "lat": 31.25,
+          "lon": 34.24,
+          "name": "Rafah Crossing",
+          "type": "HUMANITARIAN",
+          "intensity": "CRITICAL",
+          "description": "Aid restricted",
+          "region": "Gaza"
+        },
+        {
+          "lat": 33.27,
+          "lon": 35.2,
+          "name": "Lebanon Border",
+          "type": "CROSS_BORDER",
+          "intensity": "HIGH",
+          "description": "Hezbollah-IDF",
+          "region": "Lebanon"
+        },
+        {
+          "lat": 15.6,
+          "lon": 32.53,
+          "name": "Khartoum",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "HIGH",
+          "description": "SAF vs RSF",
+          "region": "Sudan"
+        },
+        {
+          "lat": 13.45,
+          "lon": 25.35,
+          "name": "El Fasher",
+          "type": "SIEGE",
+          "intensity": "CRITICAL",
+          "description": "Mass displacement",
+          "region": "Darfur"
+        },
+        {
+          "lat": 11.77,
+          "lon": 29.7,
+          "name": "Kadugli",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "MEDIUM",
+          "description": "Armed clashes",
+          "region": "S. Kordofan"
+        },
+        {
+          "lat": 22.78,
+          "lon": 96.17,
+          "name": "Mandalay",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "HIGH",
+          "description": "Resistance vs Tatmadaw",
+          "region": "Myanmar"
+        },
+        {
+          "lat": 20.45,
+          "lon": 97.03,
+          "name": "Shan State",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "MEDIUM",
+          "description": "Multi-faction",
+          "region": "Myanmar"
+        },
+        {
+          "lat": 14.5,
+          "lon": -1.52,
+          "name": "Ouagadougou",
+          "type": "TERRORISM",
+          "intensity": "HIGH",
+          "description": "JNIM/ISGS",
+          "region": "Burkina Faso"
+        },
+        {
+          "lat": 16.27,
+          "lon": -0.05,
+          "name": "Timbuktu",
+          "type": "TERRORISM",
+          "intensity": "MEDIUM",
+          "description": "Armed groups",
+          "region": "Mali"
+        },
+        {
+          "lat": 13.5,
+          "lon": 43.25,
+          "name": "Bab el-Mandeb",
+          "type": "MARITIME_THREAT",
+          "intensity": "HIGH",
+          "description": "Houthi anti-shipping",
+          "region": "Yemen"
+        },
+        {
+          "lat": 15.35,
+          "lon": 44.2,
+          "name": "Sanaa",
+          "type": "AIR_STRIKE",
+          "intensity": "MEDIUM",
+          "description": "Coalition air ops",
+          "region": "Yemen"
+        },
+        {
+          "lat": 7.5,
+          "lon": -76.5,
+          "name": "Choco Corridor",
+          "type": "NARCO_CONFLICT",
+          "intensity": "HIGH",
+          "description": "ELN/FARC dissident drug routes, Darien Gap",
+          "region": "Colombia"
+        },
+        {
+          "lat": 2.44,
+          "lon": -76.61,
+          "name": "Cauca Valley",
+          "type": "ACTIVE_COMBAT",
+          "intensity": "HIGH",
+          "description": "FARC dissident operations, coca production",
+          "region": "Colombia"
+        },
+        {
+          "lat": 1.21,
+          "lon": -77.28,
+          "name": "Narino Corridor",
+          "type": "NARCO_CONFLICT",
+          "intensity": "CRITICAL",
+          "description": "Primary Pacific cocaine export zone",
+          "region": "Colombia"
+        },
+        {
+          "lat": 19.43,
+          "lon": -99.13,
+          "name": "Mexico City Metro",
+          "type": "CARTEL_VIOLENCE",
+          "intensity": "MEDIUM",
+          "description": "Cartel territorial disputes",
+          "region": "Mexico"
+        },
+        {
+          "lat": 24.8,
+          "lon": -107.39,
+          "name": "Sinaloa",
+          "type": "CARTEL_VIOLENCE",
+          "intensity": "CRITICAL",
+          "description": "Sinaloa cartel internal conflict",
+          "region": "Mexico"
+        },
+        {
+          "lat": 25.67,
+          "lon": -100.31,
+          "name": "Monterrey",
+          "type": "CARTEL_VIOLENCE",
+          "intensity": "HIGH",
+          "description": "CJNG vs CDN territorial war",
+          "region": "Mexico"
+        },
+        {
+          "lat": 18.53,
+          "lon": -72.34,
+          "name": "Port-au-Prince",
+          "type": "GANG_WARFARE",
+          "intensity": "CRITICAL",
+          "description": "Gang coalition controls 80% of capital",
+          "region": "Haiti"
+        },
+        {
+          "lat": 10.49,
+          "lon": -66.88,
+          "name": "Caracas",
+          "type": "POLITICAL_CRISIS",
+          "intensity": "HIGH",
+          "description": "Authoritarian crackdown, mass migration",
+          "region": "Venezuela"
+        },
+        {
+          "lat": 8.98,
+          "lon": -79.52,
+          "name": "Darien Gap",
+          "type": "MIGRATION_CRISIS",
+          "intensity": "HIGH",
+          "description": "500k+ migrants/year transit zone",
+          "region": "Panama"
+        },
+        {
+          "lat": 14.63,
+          "lon": -90.51,
+          "name": "Guatemala City",
+          "type": "GANG_VIOLENCE",
+          "intensity": "MEDIUM",
+          "description": "MS-13/Barrio 18 operations",
+          "region": "Guatemala"
+        },
+        {
+          "lat": -22.91,
+          "lon": -43.17,
+          "name": "Rio de Janeiro",
+          "type": "URBAN_CONFLICT",
+          "intensity": "MEDIUM",
+          "description": "Favela drug operations, police raids",
+          "region": "Brazil"
+        },
+        {
+          "lat": -15.79,
+          "lon": -47.88,
+          "name": "Brasilia Region",
+          "type": "DEFORESTATION",
+          "intensity": "HIGH",
+          "description": "Amazon illegal deforestation hotspot",
+          "region": "Brazil"
+        },
+        {
+          "lat": 32.5,
+          "lon": -117,
+          "name": "Tijuana Border",
+          "type": "CARTEL_VIOLENCE",
+          "intensity": "HIGH",
+          "description": "Cross-border fentanyl trafficking",
+          "region": "Mexico"
+        }
+      ]
+    }
+  },
+  "/api/osint/thermal": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "status": "ACTIVE",
+      "hotspots": [
+        {
+          "lat": 48.01,
+          "lon": 37.8,
+          "brightness": 340,
+          "confidence": 95,
+          "frp": 45,
+          "type": "THERMAL",
+          "source": "FALLBACK",
+          "region": "Ukraine",
+          "date": ""
+        },
+        {
+          "lat": 31.4,
+          "lon": 34.38,
+          "brightness": 380,
+          "confidence": 99,
+          "frp": 80,
+          "type": "HIGH_ENERGY",
+          "source": "FALLBACK",
+          "region": "Gaza",
+          "date": ""
+        }
+      ]
+    }
+  },
+  "/api/osint/oryx": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "status": "ACTIVE",
+      "losses": [
+        {
+          "lat": 48.2,
+          "lon": 37.8,
+          "side": "RU",
+          "equipment": "T-72B3",
+          "status": "DESTROYED",
+          "count": 3,
+          "evidence": "Photo",
+          "region": "Avdiivka"
+        },
+        {
+          "lat": 48.55,
+          "lon": 37.95,
+          "side": "RU",
+          "equipment": "BMP-2",
+          "status": "DESTROYED",
+          "count": 5,
+          "evidence": "Video",
+          "region": "Bakhmut"
+        },
+        {
+          "lat": 48.6,
+          "lon": 38.05,
+          "side": "RU",
+          "equipment": "T-80BVM",
+          "status": "CAPTURED",
+          "count": 1,
+          "evidence": "Photo",
+          "region": "Chasiv Yar"
+        },
+        {
+          "lat": 47.85,
+          "lon": 35.1,
+          "side": "RU",
+          "equipment": "BTR-82A",
+          "status": "DESTROYED",
+          "count": 4,
+          "evidence": "Satellite",
+          "region": "Zaporizhzhia"
+        },
+        {
+          "lat": 46.6,
+          "lon": 32.6,
+          "side": "RU",
+          "equipment": "Pantsir-S1",
+          "status": "DESTROYED",
+          "count": 1,
+          "evidence": "Video",
+          "region": "Kherson"
+        },
+        {
+          "lat": 50.4,
+          "lon": 36.2,
+          "side": "RU",
+          "equipment": "S-300 TEL",
+          "status": "DESTROYED",
+          "count": 2,
+          "evidence": "Satellite",
+          "region": "Belgorod"
+        },
+        {
+          "lat": 48.1,
+          "lon": 37.65,
+          "side": "UA",
+          "equipment": "M2 Bradley",
+          "status": "DAMAGED",
+          "count": 1,
+          "evidence": "Photo",
+          "region": "Avdiivka"
+        },
+        {
+          "lat": 48.5,
+          "lon": 37.9,
+          "side": "UA",
+          "equipment": "Leopard 2A4",
+          "status": "DAMAGED",
+          "count": 1,
+          "evidence": "Video",
+          "region": "Bakhmut"
+        },
+        {
+          "lat": 31.4,
+          "lon": 34.36,
+          "side": "IL",
+          "equipment": "Merkava Mk4",
+          "status": "DAMAGED",
+          "count": 2,
+          "evidence": "Video",
+          "region": "Gaza"
+        },
+        {
+          "lat": 31.35,
+          "lon": 34.32,
+          "side": "IL",
+          "equipment": "D9 Bulldozer",
+          "status": "DESTROYED",
+          "count": 1,
+          "evidence": "Photo",
+          "region": "Khan Younis"
+        }
+      ]
+    }
+  },
+  "/api/osint/maritime": {
+    "status": 200,
+    "type": "TEXT",
+    "data": "{\"status\":\"ACTIVE\",\"ships\":[{\"id\":\"477995030\",\"mmsi\":\"477995030\",\"lat\":22.290573333333334,\"lon\":114.17026833333333,\"heading\":511,\"speed\":13.7,\"type\":\"OTHER-0\",\"status\":\"UNDERWAY\",\"flag\":\"??\",\"class\":\"AIS-0\",\"shipType\":0,\"timestamp\":1775803404906},{\"id\":\"ISLAND EXPRESS\",\"mmsi\":\"367473510\",\"lat\":32.8556,\"lon\":-79.95538166666667,\"heading\":511,\"speed\":0,\"type\":\"OTHER-0\",\"status\":\"STATIONARY\",\"flag\":\"??\",\"class\":\"AIS-0\",\"shipType\":0,\"timestamp\":1775803404906},{\"id\":\"319084700\",\"mmsi\":\"319084700\",\"lat"
+  },
+  "/api/osint/security": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "status": "ACTIVE",
+      "incidents": [
+        {
+          "lat": 36.19,
+          "lon": 44.01,
+          "name": "Erbil Drone Attack",
+          "type": "DRONE",
+          "target": "Military base",
+          "casualties": "None",
+          "date": "2026-03-15",
+          "region": "Iraq"
+        },
+        {
+          "lat": 33.31,
+          "lon": 44.37,
+          "name": "Baghdad IED",
+          "type": "IED",
+          "target": "Convoy",
+          "casualties": "3 injured",
+          "date": "2026-03-20",
+          "region": "Iraq"
+        },
+        {
+          "lat": 6.45,
+          "lon": 3.4,
+          "name": "Lagos Kidnapping",
+          "type": "KIDNAP",
+          "target": "Civilian",
+          "casualties": "5 hostages",
+          "date": "2026-03-18",
+          "region": "Nigeria"
+        },
+        {
+          "lat": 1.29,
+          "lon": 36.82,
+          "name": "Kenya Border",
+          "type": "AL_SHABAAB",
+          "target": "Patrol",
+          "casualties": "2 KIA",
+          "date": "2026-03-22",
+          "region": "Kenya"
+        },
+        {
+          "lat": 34.8,
+          "lon": 67.83,
+          "name": "Bamyan",
+          "type": "ISISK",
+          "target": "Checkpoint",
+          "casualties": "4 KIA",
+          "date": "2026-03-19",
+          "region": "Afghanistan"
+        },
+        {
+          "lat": 26.07,
+          "lon": 56.35,
+          "name": "Hormuz Strait",
+          "type": "SEIZURE",
+          "target": "Tanker",
+          "casualties": "Crew held",
+          "date": "2026-03-25",
+          "region": "Iran"
+        },
+        {
+          "lat": 8.5,
+          "lon": -77,
+          "name": "Darien Drug Seizure",
+          "type": "NARCO_INTERCEPT",
+          "target": "2.5T cocaine",
+          "casualties": "6 arrested",
+          "date": "2026-03-22",
+          "region": "Panama"
+        },
+        {
+          "lat": 25.77,
+          "lon": -80.19,
+          "name": "Miami Port Seizure",
+          "type": "NARCO_INTERCEPT",
+          "target": "Cargo vessel",
+          "casualties": "Fentanyl 500kg",
+          "date": "2026-03-20",
+          "region": "USA"
+        },
+        {
+          "lat": 18.2,
+          "lon": -66.5,
+          "name": "PR Coast Guard Op",
+          "type": "MARITIME_INTERDICTION",
+          "target": "Go-fast boat",
+          "casualties": "4 detained",
+          "date": "2026-03-24",
+          "region": "Puerto Rico"
+        },
+        {
+          "lat": -2.17,
+          "lon": -79.92,
+          "name": "Guayaquil Prison Riot",
+          "type": "GANG_VIOLENCE",
+          "target": "Prison",
+          "casualties": "12 KIA",
+          "date": "2026-03-23",
+          "region": "Ecuador"
+        }
+      ]
+    }
+  },
+  "/api/osint/disasters": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "status": "ACTIVE",
+      "events": [
+        {
+          "lat": 27.2034,
+          "lon": 55.6594,
+          "name": "61 km W of Bandar Abbas, Iran",
+          "type": "EARTHQUAKE",
+          "magnitude": 4.9,
+          "status": "MODERATE",
+          "date": "2026-05-21",
+          "region": "61 km W of Bandar Abbas, Iran",
+          "tsunami": 0,
+          "depth": 10
+        },
+        {
+          "lat": 61.222,
+          "lon": -147.046,
+          "name": "38 km WNW of Valdez, Alaska",
+          "type": "EARTHQUAKE",
+          "magnitude": 2.5,
+          "status": "MINOR",
+          "date": "2026-05-21",
+          "region": "38 km WNW of Valdez, Alaska",
+          "tsunami": 0,
+          "depth": 1
+        },
+        {
+          "lat": -56.071,
+          "lon": -27.6747,
+          "name": "South Sandwich Islands region",
+          "type": "EARTHQUAKE",
+          "magnitude": 4.7,
+          "status": "MODERATE",
+          "date": "2026-05-21",
+          "region": "South Sandwich Islands region",
+          "tsunami": 0,
+          "depth": 128
+        },
+        {
+          "lat": 19.1448333333333,
+          "lon": -64.5825,
+          "name": "92 km NNE of Cruz Bay, U.S. Virgin Islands",
+          "type": "EARTHQUAKE",
+          "magnitude": 3.21,
+          "status": "MINOR",
+          "date": "2026-05-21",
+          "region": "92 km NNE of Cruz Bay, U.S. Virgin Islands",
+          "tsunami": 0,
+          "depth": 25
+        },
+        {
+          "lat": 51.163,
+          "lon": 173.7627,
+          "name": "191 km SSE of Attu Station, Alaska",
+          "type": "EARTHQUAKE",
+          "magnitude": 4.4,
+          "status": "MODERATE",
+          "date": "2026-05-21",
+          "region": "191 km SSE of Attu Station, Alaska",
+          "tsunami": 0,
+          "depth": 10
+        },
+        {
+          "lat": -15.5173,
+          "lon": -174.7428,
+          "name": "112 km WNW of Hihifo, Tonga",
+          "type": "EARTHQUAKE",
+          "magnitude": 4.4,
+          "status": "MODERATE",
+          "date": "2026-05-21",
+          "region": "112 km WNW of Hihifo, Tonga",
+          "tsunami": 0,
+          "depth": 276
+        },
+        {
+          "lat": 19.0090007781982,
+          "lon": -155.366500854492,
+          "name": "23 km ESE of Naalehu, Hawaii",
+          "type": "EARTHQUAKE",
+          "magnitude": 2.89,
+          "status": "MINOR",
+          "date": "2026-05-21",
+          "region": "23 km ESE of Naalehu, Hawaii",
+          "tsunami": 0,
+          "depth": 16
+        },
+        {
+          "lat": 59.689,
+          "lon": -146.796,
+          "name": "80 km ESE of Chenega, Alaska",
+          "type": "EARTHQUAKE",
+          "magnitude": 2.6,
+          "status": "MINOR",
+          "date": "2026-05-21",
+          "region": "80 km ESE of Chenega, Alaska",
+          "tsunami": 0,
+          "depth": 39
+        },
+        {
+          "lat": 40.785,
+          "lon": 14.0677,
+          "name": "1 km SSW of Bacoli, Italy",
+          "type": "EARTHQUAKE",
+          "magnitude": 4.1,
+          "status": "MODERATE",
+          "date": "2026-05-21",
+          "region": "1 km SSW of Bacoli, Italy",
+          "tsunami": 0,
+          "depth": 7
+        },
+        {
+          "lat": 31.175,
+          "lon": -103.011,
+          "name": "9 km SE of Coyanosa, Texas",
+          "type": "EARTHQUAKE",
+          "magnitude": 2.7,
+          "status": "MINOR",
+          "date": "2026-05-21",
+          "region": "9 km SE of Coyanosa, Texas",
+          "tsunami": 0,
+          "depth": 9
+        },
+        {
+          "lat": 19.2916660308838,
+          "lon": -155.39616394043,
+          "name": "13 km NE of P\u0101hala, Hawaii",
+          "type": "EARTHQUAKE",
+          "magnitude": 2.54,
+          "status": "MINOR",
+          "date": "2026-05-21",
+          "region": "13 km NE of P\u0101hala, Hawaii",
+          "tsunami": 0,
+          "depth": 30
+        },
+        {
+          "lat": 19.4638,
+          "lon": -64.8171,
+          "name": "124 km N of Charlotte Amalie, U.S. Virgin Islands",
+          "type": "EARTHQUAKE",
+          "magnitude": 3.66,
+          "status": "MINOR",
+          "date": "2026-05-21",
+          "region": "124 km N of Charlotte Amalie, U.S. Virgin Islands",
+          "tsunami": 0,
+          "depth": 28
+        },
+        {
+          "lat": 34.0617,
+          "lon": 137.3718,
+          "name": "58 km ESE of Shima, Japan",
+          "type": "EARTHQUAKE",
+          "magnitude": 4.1,
+          "status": "MODERATE",
+          "date": "2026-05-21",
+          "region": "58 km ESE of Shima, Japan",
+          "tsunami": 0,
+          "depth": 329
+        },
+        {
+          "lat": 31.531,
+          "lon": -104.004,
+          "name": "31 km NW of Toyah, Texas",
+          "type": "EARTHQUAKE",
+          "magnitude": 2.6,
+          "status": "MINOR",
+          "date": "2026-05-21",
+          "region": "31 km NW of Toyah, Texas",
+          "tsunami": 0,
+          "depth": 8
+        },
+        {
+          "lat": 19.045,
+          "lon": -155.400833333333,
+          "name": "19 km E of Naalehu, Hawaii",
+          "type": "EARTHQUAKE",
+          "magnitude": 2.64,
+          "status": "MINOR",
+          "date": "2026-05-20",
+          "region": "19 km E of Naalehu, Hawaii",
+          "tsunami": 0,
+          "depth": 34
+        },
+        {
+          "lat": -8.34,
+          "lon": 115.51,
+          "name": "Mt Agung",
+          "type": "VOLCANIC",
+          "magnitude": 0,
+          "status": "ELEVATED",
+          "date": "2026-03-20",
+          "region": "Indonesia",
+          "depth": 0
+        },
+        {
+          "lat": 14.44,
+          "lon": 121,
+          "name": "Manila Flood",
+          "type": "FLOOD",
+          "magnitude": 0,
+          "status": "ONGOING",
+          "date": "2026-03-23",
+          "region": "Philippines",
+          "depth": 0
+        },
+        {
+          "lat": 35.68,
+          "lon": 51.39,
+          "name": "Tehran AQI",
+          "type": "POLLUTION",
+          "magnitude": 0,
+          "status": "HAZARDOUS",
+          "date": "2026-03-27",
+          "region": "Iran",
+          "depth": 0
+        }
+      ]
+    }
+  },
+  "/api/osint/aviation": {
+    "status": 200,
+    "type": "TEXT",
+    "data": "{\"status\":\"ACTIVE\",\"milCount\":178,\"civCount\":0,\"vectors\":[{\"callsign\":\"HUSK99\",\"icao24\":\"c2b3c3\",\"lat\":64.821522,\"lon\":-147.85752,\"alt\":0,\"vel\":0,\"heading\":28,\"country\":\"15004\",\"on_ground\":true,\"category\":7,\"source\":\"adsb.lol\",\"acType\":\"A310\",\"reg\":\"15004\",\"military\":true},{\"callsign\":\"JANET24\",\"icao24\":\"a2b320\",\"lat\":36.560591,\"lon\":-116.022988,\"alt\":18975,\"vel\":200,\"heading\":122,\"country\":\"N273RH\",\"on_ground\":false,\"category\":7,\"source\":\"adsb.lol\",\"acType\":\"B736\",\"reg\":\"N273RH\",\"military\":true"
+  },
+  "/api/portfolio": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "status": "ACTIVE",
+      "market": {
+        "asset": "BTC/USDT",
+        "price": "77206.52000000",
+        "status": "ACTIVE"
+      }
+    }
+  },
+  "/api/osint/losses": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "ru": {
+        "total": 16,
+        "destroyed": 15,
+        "captured": 1,
+        "damaged": 0
+      },
+      "ua": {
+        "total": 2,
+        "destroyed": 0,
+        "captured": 0,
+        "damaged": 2
+      },
+      "il": {
+        "total": 3,
+        "destroyed": 1,
+        "captured": 0,
+        "damaged": 2
+      },
+      "lastUpdate": "2026-05-21T12:20:11.361Z"
+    }
+  },
+  "/api/osint/economic": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "status": "ACTIVE",
+      "news": [
+        {
+          "headline": "EU approves 14th sanctions package targeting RU oil revenue",
+          "impact": "HIGH",
+          "sector": "ENERGY",
+          "region": "EU/Russia",
+          "sentiment": "bearish_ru"
+        },
+        {
+          "headline": "US Fed holds rates steady, signals June cut possible",
+          "impact": "HIGH",
+          "sector": "MONETARY",
+          "region": "Global",
+          "sentiment": "bullish"
+        },
+        {
+          "headline": "Red Sea shipping insurance premiums up 300% YoY",
+          "impact": "MEDIUM",
+          "sector": "TRADE",
+          "region": "Middle East",
+          "sentiment": "bearish"
+        },
+        {
+          "headline": "Ukraine grain corridor deal extended 60 days",
+          "impact": "MEDIUM",
+          "sector": "AGRICULTURE",
+          "region": "Ukraine/Global",
+          "sentiment": "bullish"
+        },
+        {
+          "headline": "Defense stocks rally: LMT +4.2%, RTX +3.8% on NATO spending",
+          "impact": "MEDIUM",
+          "sector": "DEFENSE",
+          "region": "US/NATO",
+          "sentiment": "bullish"
+        },
+        {
+          "headline": "Rare earth export controls tightened by China",
+          "impact": "HIGH",
+          "sector": "TECH",
+          "region": "China/Global",
+          "sentiment": "bearish"
+        },
+        {
+          "headline": "Colombia peso rallies on oil exports recovery",
+          "impact": "MEDIUM",
+          "sector": "COMMODITIES",
+          "region": "Colombia",
+          "sentiment": "bullish"
+        },
+        {
+          "headline": "US-Mexico border wall funding expanded $3.2B",
+          "impact": "MEDIUM",
+          "sector": "DEFENSE",
+          "region": "US/Mexico",
+          "sentiment": "bullish"
+        },
+        {
+          "headline": "Brazil Amazon carbon credits program launches",
+          "impact": "MEDIUM",
+          "sector": "ENVIRONMENT",
+          "region": "Brazil",
+          "sentiment": "bullish"
+        },
+        {
+          "headline": "Venezuela sanctions eased for oil-for-food deal",
+          "impact": "HIGH",
+          "sector": "ENERGY",
+          "region": "Venezuela",
+          "sentiment": "bullish"
+        }
+      ]
+    }
+  },
+  "/api/osint/infra": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "status": "ACTIVE",
+      "targets": [
+        {
+          "lat": 50.45,
+          "lon": 30.52,
+          "target": "Kyiv Power Grid",
+          "type": "ENERGY",
+          "status": "DAMAGED",
+          "weapon": "Shahed-136",
+          "date": "2026-03-27",
+          "impact": "Partial blackout, 200k affected"
+        },
+        {
+          "lat": 48.46,
+          "lon": 35.04,
+          "target": "Dnipro Bridge",
+          "type": "TRANSPORT",
+          "status": "DESTROYED",
+          "weapon": "Iskander-M",
+          "date": "2026-03-26",
+          "impact": "Supply route cut"
+        },
+        {
+          "lat": 46.48,
+          "lon": 30.73,
+          "target": "Odesa Port Terminal",
+          "type": "LOGISTICS",
+          "status": "DAMAGED",
+          "weapon": "Kalibr",
+          "date": "2026-03-25",
+          "impact": "Grain exports delayed"
+        },
+        {
+          "lat": 49.84,
+          "lon": 24.03,
+          "target": "Lviv Substation",
+          "type": "ENERGY",
+          "status": "DAMAGED",
+          "weapon": "Kh-101",
+          "date": "2026-03-24",
+          "impact": "Grid instability western UA"
+        },
+        {
+          "lat": 55.75,
+          "lon": 49.13,
+          "target": "Tatarstan Refinery",
+          "type": "ENERGY",
+          "status": "DAMAGED",
+          "weapon": "UAV strike",
+          "date": "2026-03-26",
+          "impact": "Production -15%"
+        },
+        {
+          "lat": 51.67,
+          "lon": 39.21,
+          "target": "Voronezh Fuel Depot",
+          "type": "ENERGY",
+          "status": "DESTROYED",
+          "weapon": "UAV swarm",
+          "date": "2026-03-27",
+          "impact": "Logistics disruption"
+        },
+        {
+          "lat": 31.4,
+          "lon": 34.38,
+          "target": "Gaza Hospital Complex",
+          "type": "MEDICAL",
+          "status": "DAMAGED",
+          "weapon": "Airstrike",
+          "date": "2026-03-26",
+          "impact": "Capacity reduced 60%"
+        },
+        {
+          "lat": 15.6,
+          "lon": 32.53,
+          "target": "Khartoum Water Plant",
+          "type": "WATER",
+          "status": "DESTROYED",
+          "weapon": "Artillery",
+          "date": "2026-03-25",
+          "impact": "500k without water"
+        },
+        {
+          "lat": 7.1,
+          "lon": -73.12,
+          "name": "Cano Limon Pipeline",
+          "target": "Cano Limon Pipeline",
+          "type": "ENERGY",
+          "status": "DAMAGED",
+          "weapon": "ELN sabotage",
+          "date": "2026-03-22",
+          "impact": "Oil production -30k bpd"
+        },
+        {
+          "lat": 18.53,
+          "lon": -72.34,
+          "name": "PAP Water System",
+          "target": "Port-au-Prince Water",
+          "type": "WATER",
+          "status": "COLLAPSED",
+          "weapon": "Gang seizure",
+          "date": "2026-03-20",
+          "impact": "2M without clean water"
+        }
+      ]
+    }
+  },
+  "/api/ai/status": {
+    "status": 200,
+    "type": "REAL_API",
+    "data": {
+      "enabled": false,
+      "callsToday": 0,
+      "callsMax": 6,
+      "totalTokens": 0,
+      "estimatedCostUSD": "0.000000",
+      "lastAnalysis": "",
+      "lastTime": ""
+    }
+  },
+  "/api/telegram/report": {
+    "status": 401,
+    "type": "ERROR",
+    "data": "{\"error\":\"Authentication required\"}"
+  }
+}

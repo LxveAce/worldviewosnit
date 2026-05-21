@@ -1,0 +1,27 @@
+{
+  "status": "ACTIVE",
+  "hotspots": [
+    {
+      "lat": 48.01,
+      "lon": 37.8,
+      "brightness": 340,
+      "confidence": 95,
+      "frp": 45,
+      "type": "THERMAL",
+      "source": "FALLBACK",
+      "region": "Ukraine",
+      "date": ""
+    },
+    {
+      "lat": 31.4,
+      "lon": 34.38,
+      "brightness": 380,
+      "confidence": 99,
+      "frp": 80,
+      "type": "HIGH_ENERGY",
+      "source": "FALLBACK",
+      "region": "Gaza",
+      "date": ""
+    }
+  ]
+}

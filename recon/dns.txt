@@ -1,0 +1,109 @@
+﻿=== DNS RECONNAISSANCE: worldviewosint.com ===
+Date: 2026-05-21 08:09:01 UTC
+
+--- A Records ---
+Name       : worldviewosint.com
+Type       : A
+TTL        : 300
+DataLength : 4
+Section    : Answer
+IPAddress  : 104.21.82.34
+Name       : worldviewosint.com
+Type       : A
+TTL        : 300
+DataLength : 4
+Section    : Answer
+IPAddress  : 172.67.193.202
+
+--- AAAA Records ---
+Name       : worldviewosint.com
+Type       : AAAA
+TTL        : 300
+DataLength : 16
+Section    : Answer
+IPAddress  : 2606:4700:3030::ac43:c1ca
+Name       : worldviewosint.com
+Type       : AAAA
+TTL        : 300
+DataLength : 16
+Section    : Answer
+IPAddress  : 2606:4700:3037::6815:5222
+
+--- CNAME Records ---
+Name              : worldviewosint.com
+Type              : SOA
+TTL               : 1800
+PrimaryServer     : melody.ns.cloudflare.com
+NameAdministrator : dns.cloudflare.com
+SerialNumber      : 2400216994
+
+--- MX Records ---
+Name              : worldviewosint.com
+Type              : SOA
+TTL               : 1800
+PrimaryServer     : melody.ns.cloudflare.com
+NameAdministrator : dns.cloudflare.com
+SerialNumber      : 2400216994
+
+--- TXT Records ---
+Name              : worldviewosint.com
+Type              : SOA
+TTL               : 1800
+PrimaryServer     : melody.ns.cloudflare.com
+NameAdministrator : dns.cloudflare.com
+SerialNumber      : 2400216994
+
+--- NS Records ---
+Name     : worldviewosint.com
+Type     : NS
+TTL      : 21600
+Section  : Answer
+NameHost : melody.ns.cloudflare.com
+Name     : worldviewosint.com
+Type     : NS
+TTL      : 21600
+Section  : Answer
+NameHost : tosana.ns.cloudflare.com
+
+--- SOA Records ---
+Name              : worldviewosint.com
+Type              : SOA
+TTL               : 1800
+PrimaryServer     : melody.ns.cloudflare.com
+NameAdministrator : dns.cloudflare.com
+SerialNumber      : 2400216994
+
+
+--- WHOIS Data ---
+Registrar: Cloudflare, Inc. (whois.cloudflare.com)
+Created: 2026-03-28
+Updated: 2026-04-03
+Expires: 2027-03-28
+Domain Status: clientTransferProhibited
+Registrant: DATA REDACTED
+Registrant Location: VALLE DEL CAUCA, CO (Colombia)
+Phone: +1.4153197517 (likely Cloudflare proxy)
+Name Servers: melody.ns.cloudflare.com, tosana.ns.cloudflare.com
+IP Address: 172.67.193.202 (Cloudflare)
+DNSSEC: Not reported
+
+ANALYSIS:
+- Domain registered 54 days ago (March 28, 2026)
+- Registrant is in Valle del Cauca, Colombia (Cali region)
+- Corroborates: HTML lang="es", "COL" nav button, Mapbox username "juanes2794"
+- 1-year registration period
+- Cloudflare for everything: registrar, DNS, CDN, TLS
+
+--- Subdomain Enumeration ---
+  www.worldviewosint.com => 104.21.82.34, 172.67.193.202
+  api.worldviewosint.com => NOT FOUND
+  app.worldviewosint.com => NOT FOUND
+  admin.worldviewosint.com => NOT FOUND
+  dev.worldviewosint.com => NOT FOUND
+  staging.worldviewosint.com => NOT FOUND
+  mail.worldviewosint.com => NOT FOUND
+  cdn.worldviewosint.com => NOT FOUND
+  static.worldviewosint.com => NOT FOUND
+  dashboard.worldviewosint.com => NOT FOUND
+  test.worldviewosint.com => NOT FOUND
+  beta.worldviewosint.com => NOT FOUND

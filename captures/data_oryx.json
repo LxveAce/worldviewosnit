@@ -1,0 +1,105 @@
+{
+  "status": "ACTIVE",
+  "losses": [
+    {
+      "lat": 48.2,
+      "lon": 37.8,
+      "side": "RU",
+      "equipment": "T-72B3",
+      "status": "DESTROYED",
+      "count": 3,
+      "evidence": "Photo",
+      "region": "Avdiivka"
+    },
+    {
+      "lat": 48.55,
+      "lon": 37.95,
+      "side": "RU",
+      "equipment": "BMP-2",
+      "status": "DESTROYED",
+      "count": 5,
+      "evidence": "Video",
+      "region": "Bakhmut"
+    },
+    {
+      "lat": 48.6,
+      "lon": 38.05,
+      "side": "RU",
+      "equipment": "T-80BVM",
+      "status": "CAPTURED",
+      "count": 1,
+      "evidence": "Photo",
+      "region": "Chasiv Yar"
+    },
+    {
+      "lat": 47.85,
+      "lon": 35.1,
+      "side": "RU",
+      "equipment": "BTR-82A",
+      "status": "DESTROYED",
+      "count": 4,
+      "evidence": "Satellite",
+      "region": "Zaporizhzhia"
+    },
+    {
+      "lat": 46.6,
+      "lon": 32.6,
+      "side": "RU",
+      "equipment": "Pantsir-S1",
+      "status": "DESTROYED",
+      "count": 1,
+      "evidence": "Video",
+      "region": "Kherson"
+    },
+    {
+      "lat": 50.4,
+      "lon": 36.2,
+      "side": "RU",
+      "equipment": "S-300 TEL",
+      "status": "DESTROYED",
+      "count": 2,
+      "evidence": "Satellite",
+      "region": "Belgorod"
+    },
+    {
+      "lat": 48.1,
+      "lon": 37.65,
+      "side": "UA",
+      "equipment": "M2 Bradley",
+      "status": "DAMAGED",
+      "count": 1,
+      "evidence": "Photo",
+      "region": "Avdiivka"
+    },
+    {
+      "lat": 48.5,
+      "lon": 37.9,
+      "side": "UA",
+      "equipment": "Leopard 2A4",
+      "status": "DAMAGED",
+      "count": 1,
+      "evidence": "Video",
+      "region": "Bakhmut"
+    },
+    {
+      "lat": 31.4,
+      "lon": 34.36,
+      "side": "IL",
+      "equipment": "Merkava Mk4",
+      "status": "DAMAGED",
+      "count": 2,
+      "evidence": "Video",
+      "region": "Gaza"
+    },
+    {
+      "lat": 31.35,
+      "lon": 34.32,
+      "side": "IL",
+      "equipment": "D9 Bulldozer",
+      "status": "DESTROYED",
+      "count": 1,
+      "evidence": "Photo",
+      "region": "Khan Younis"
+    }
+  ]
+}

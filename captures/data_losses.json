@@ -1,0 +1,21 @@
+{
+  "ru": {
+    "total": 16,
+    "destroyed": 15,
+    "captured": 1,
+    "damaged": 0
+  },
+  "ua": {
+    "total": 2,
+    "destroyed": 0,
+    "captured": 0,
+    "damaged": 2
+  },
+  "il": {
+    "total": 3,
+    "destroyed": 1,
+    "captured": 0,
+    "damaged": 2
+  },
+  "lastUpdate": "2026-05-21T12:20:11.361Z"
+}

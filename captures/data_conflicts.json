@@ -1,0 +1,329 @@
+{
+  "status": "ACTIVE",
+  "zones": [
+    {
+      "lat": 48.14,
+      "lon": 37.74,
+      "name": "Avdiivka Sector",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "CRITICAL",
+      "description": "Mechanized assault, heavy RU losses",
+      "region": "Donetsk"
+    },
+    {
+      "lat": 48.58,
+      "lon": 37.98,
+      "name": "Bakhmut-Chasiv Yar",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "HIGH",
+      "description": "Urban assault operations",
+      "region": "Donetsk"
+    },
+    {
+      "lat": 47.84,
+      "lon": 35.14,
+      "name": "Zaporizhzhia Line",
+      "type": "FORTIFIED",
+      "intensity": "MEDIUM",
+      "description": "Defensive ops",
+      "region": "Zaporizhzhia"
+    },
+    {
+      "lat": 46.63,
+      "lon": 32.62,
+      "name": "Kherson Bridgehead",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "HIGH",
+      "description": "Cross-river ops",
+      "region": "Kherson"
+    },
+    {
+      "lat": 50.45,
+      "lon": 36.25,
+      "name": "Kharkiv Defense",
+      "type": "AIR_DEFENSE",
+      "intensity": "HIGH",
+      "description": "S-300/Patriot zone",
+      "region": "Kharkiv"
+    },
+    {
+      "lat": 48.46,
+      "lon": 35.04,
+      "name": "Dnipro Shield",
+      "type": "AIR_DEFENSE",
+      "intensity": "MEDIUM",
+      "description": "Multi-layer AD",
+      "region": "Dnipro"
+    },
+    {
+      "lat": 51.5,
+      "lon": 31.3,
+      "name": "Chernihiv Drones",
+      "type": "DRONE_WARFARE",
+      "intensity": "MEDIUM",
+      "description": "FPV drone ops",
+      "region": "Chernihiv"
+    },
+    {
+      "lat": 48.72,
+      "lon": 37.56,
+      "name": "Toretsk Salient",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "HIGH",
+      "description": "Urban infantry",
+      "region": "Donetsk"
+    },
+    {
+      "lat": 49.1,
+      "lon": 38.1,
+      "name": "Lyman Direction",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "MEDIUM",
+      "description": "Positional warfare",
+      "region": "Donetsk"
+    },
+    {
+      "lat": 47.1,
+      "lon": 35.7,
+      "name": "Melitopol Rear",
+      "type": "PARTISAN",
+      "intensity": "LOW",
+      "description": "Resistance ops",
+      "region": "Zaporizhzhia"
+    },
+    {
+      "lat": 31.42,
+      "lon": 34.35,
+      "name": "Gaza North",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "CRITICAL",
+      "description": "Urban ops, humanitarian crisis",
+      "region": "Gaza"
+    },
+    {
+      "lat": 31.35,
+      "lon": 34.3,
+      "name": "Khan Younis",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "HIGH",
+      "description": "IDF ground ops",
+      "region": "Gaza"
+    },
+    {
+      "lat": 31.25,
+      "lon": 34.24,
+      "name": "Rafah Crossing",
+      "type": "HUMANITARIAN",
+      "intensity": "CRITICAL",
+      "description": "Aid restricted",
+      "region": "Gaza"
+    },
+    {
+      "lat": 33.27,
+      "lon": 35.2,
+      "name": "Lebanon Border",
+      "type": "CROSS_BORDER",
+      "intensity": "HIGH",
+      "description": "Hezbollah-IDF",
+      "region": "Lebanon"
+    },
+    {
+      "lat": 15.6,
+      "lon": 32.53,
+      "name": "Khartoum",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "HIGH",
+      "description": "SAF vs RSF",
+      "region": "Sudan"
+    },
+    {
+      "lat": 13.45,
+      "lon": 25.35,
+      "name": "El Fasher",
+      "type": "SIEGE",
+      "intensity": "CRITICAL",
+      "description": "Mass displacement",
+      "region": "Darfur"
+    },
+    {
+      "lat": 11.77,
+      "lon": 29.7,
+      "name": "Kadugli",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "MEDIUM",
+      "description": "Armed clashes",
+      "region": "S. Kordofan"
+    },
+    {
+      "lat": 22.78,
+      "lon": 96.17,
+      "name": "Mandalay",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "HIGH",
+      "description": "Resistance vs Tatmadaw",
+      "region": "Myanmar"
+    },
+    {
+      "lat": 20.45,
+      "lon": 97.03,
+      "name": "Shan State",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "MEDIUM",
+      "description": "Multi-faction",
+      "region": "Myanmar"
+    },
+    {
+      "lat": 14.5,
+      "lon": -1.52,
+      "name": "Ouagadougou",
+      "type": "TERRORISM",
+      "intensity": "HIGH",
+      "description": "JNIM/ISGS",
+      "region": "Burkina Faso"
+    },
+    {
+      "lat": 16.27,
+      "lon": -0.05,
+      "name": "Timbuktu",
+      "type": "TERRORISM",
+      "intensity": "MEDIUM",
+      "description": "Armed groups",
+      "region": "Mali"
+    },
+    {
+      "lat": 13.5,
+      "lon": 43.25,
+      "name": "Bab el-Mandeb",
+      "type": "MARITIME_THREAT",
+      "intensity": "HIGH",
+      "description": "Houthi anti-shipping",
+      "region": "Yemen"
+    },
+    {
+      "lat": 15.35,
+      "lon": 44.2,
+      "name": "Sanaa",
+      "type": "AIR_STRIKE",
+      "intensity": "MEDIUM",
+      "description": "Coalition air ops",
+      "region": "Yemen"
+    },
+    {
+      "lat": 7.5,
+      "lon": -76.5,
+      "name": "Choco Corridor",
+      "type": "NARCO_CONFLICT",
+      "intensity": "HIGH",
+      "description": "ELN/FARC dissident drug routes, Darien Gap",
+      "region": "Colombia"
+    },
+    {
+      "lat": 2.44,
+      "lon": -76.61,
+      "name": "Cauca Valley",
+      "type": "ACTIVE_COMBAT",
+      "intensity": "HIGH",
+      "description": "FARC dissident operations, coca production",
+      "region": "Colombia"
+    },
+    {
+      "lat": 1.21,
+      "lon": -77.28,
+      "name": "Narino Corridor",
+      "type": "NARCO_CONFLICT",
+      "intensity": "CRITICAL",
+      "description": "Primary Pacific cocaine export zone",
+      "region": "Colombia"
+    },
+    {
+      "lat": 19.43,
+      "lon": -99.13,
+      "name": "Mexico City Metro",
+      "type": "CARTEL_VIOLENCE",
+      "intensity": "MEDIUM",
+      "description": "Cartel territorial disputes",
+      "region": "Mexico"
+    },
+    {
+      "lat": 24.8,
+      "lon": -107.39,
+      "name": "Sinaloa",
+      "type": "CARTEL_VIOLENCE",
+      "intensity": "CRITICAL",
+      "description": "Sinaloa cartel internal conflict",
+      "region": "Mexico"
+    },
+    {
+      "lat": 25.67,
+      "lon": -100.31,
+      "name": "Monterrey",
+      "type": "CARTEL_VIOLENCE",
+      "intensity": "HIGH",
+      "description": "CJNG vs CDN territorial war",
+      "region": "Mexico"
+    },
+    {
+      "lat": 18.53,
+      "lon": -72.34,
+      "name": "Port-au-Prince",
+      "type": "GANG_WARFARE",
+      "intensity": "CRITICAL",
+      "description": "Gang coalition controls 80% of capital",
+      "region": "Haiti"
+    },
+    {
+      "lat": 10.49,
+      "lon": -66.88,
+      "name": "Caracas",
+      "type": "POLITICAL_CRISIS",
+      "intensity": "HIGH",
+      "description": "Authoritarian crackdown, mass migration",
+      "region": "Venezuela"
+    },
+    {
+      "lat": 8.98,
+      "lon": -79.52,
+      "name": "Darien Gap",
+      "type": "MIGRATION_CRISIS",
+      "intensity": "HIGH",
+      "description": "500k+ migrants/year transit zone",
+      "region": "Panama"
+    },
+    {
+      "lat": 14.63,
+      "lon": -90.51,
+      "name": "Guatemala City",
+      "type": "GANG_VIOLENCE",
+      "intensity": "MEDIUM",
+      "description": "MS-13/Barrio 18 operations",
+      "region": "Guatemala"
+    },
+    {
+      "lat": -22.91,
+      "lon": -43.17,
+      "name": "Rio de Janeiro",
+      "type": "URBAN_CONFLICT",
+      "intensity": "MEDIUM",
+      "description": "Favela drug operations, police raids",
+      "region": "Brazil"
+    },
+    {
+      "lat": -15.79,
+      "lon": -47.88,
+      "name": "Brasilia Region",
+      "type": "DEFORESTATION",
+      "intensity": "HIGH",
+      "description": "Amazon illegal deforestation hotspot",
+      "region": "Brazil"
+    },
+    {
+      "lat": 32.5,
+      "lon": -117,
+      "name": "Tijuana Border",
+      "type": "CARTEL_VIOLENCE",
+      "intensity": "HIGH",
+      "description": "Cross-border fentanyl trafficking",
+      "region": "Mexico"
+    }
+  ]
+}
