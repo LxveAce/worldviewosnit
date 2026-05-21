@@ -634,12 +634,12 @@ Checks for:
 | 2 | HTTP method fuzzing on all 16 endpoints | 10 min | HIGH | **DONE** — API is GET-only, all mutations return SPA |
 | 3 | Activate AI endpoints (toggle + force) | 5 min | HIGH | **DONE** — Requires auth (401), NOT unauthenticated |
 | 4 | Git repo exposure check (`.git/HEAD`) | 2 min | CRITICAL if exposed | **DONE** — NOT exposed (returns SPA HTML) |
-| 5 | Path brute-force with Node.js wordlist | 20 min | HIGH | **Pending** — needs ffuf/gobuster |
+| 5 | Path brute-force with Node.js wordlist | 20 min | HIGH | **DONE** — 133 paths, found `/docker-compose.yml` exposed + `/api/ai/analyze` |
 | 6 | Auth bypass on `/api/telegram/report` | 15 min | MEDIUM-HIGH | **DONE** — 48 vectors tested, 0 bypasses |
-| 7 | CT logs + historical DNS | 10 min | MEDIUM-HIGH | **PARTIAL** — CT logs checked (no pre-CF certs), historical DNS needs SecurityTrails |
-| 8 | Shodan/Censys fingerprint search | 10 min | HIGH | **BLOCKED** — Requires Shodan API key / paid account |
+| 7 | CT logs + historical DNS | 10 min | MEDIUM-HIGH | **DONE** — CertSpotter: 2 certs from day 1 (Cloudflare from start), no pre-CF IP |
+| 8 | Shodan/Censys fingerprint search | 10 min | HIGH | **BLOCKED** — Requires API keys. Search queries documented. |
 | 9 | GitHub search for juanes2794 | 5 min | HIGH | **DONE** — Account does NOT exist on GitHub/GitLab/npm/etc |
-| 10 | WebSocket handshake testing | 10 min | MEDIUM | **Pending** — needs wscat |
+| 10 | WebSocket handshake testing | 10 min | MEDIUM | **DONE** — 16 paths tested, 0 WebSocket endpoints (HTTP polling only) |
 | 11 | Parameter fuzzing on API endpoints | 30 min | HIGH | **DONE** — API ignores ALL query params (static in-memory data) |
 | 12 | Response timing analysis | 5 min | MEDIUM | **DONE** — Aviation/thermal ~1100ms (external), others cached |
 | 13 | Multi-point temporal capture | 24 hrs | HIGH | **Pending** — needs cron setup |
@@ -657,6 +657,14 @@ Checks for:
 | **API is GET-only** | No write access via mutation methods |
 | **juanes2794 is Mapbox-only** | Username not found on any code/social platform |
 | **29 OSINT tools cataloged** | See `recon/github-osint.md` for full tool analysis |
+| **docker-compose.yml EXPOSED** | CRITICAL — Reveals TypeScript backend, Neo4j 5 DB with NO AUTH, port 3000 |
+| **New endpoint /api/ai/analyze** | Auth-protected (401), not in client JS — hidden server-side route |
+| **No WebSockets** | 0/16 WS paths responded — data is HTTP-polled at 30s/45s intervals |
+| **Cloudflare from day 1** | CertSpotter shows certs issued March 28 (creation day) — no pre-CF IP exposure |
+| **0 URLScan / 0 Wayback** | Site has never been publicly scanned or archived |
+| **CORS 48/48 vulnerable** | ALL origins reflected with credentials on ALL endpoints |
+| **Port scan: standard CF** | Only 443 serves content; HTTP ports redirect; alt HTTPS ports timeout |
+| **Origin IP fully hidden** | 60 subdomains, IPv6, DNS history, CT logs, error probes — all clean |
 
 ---
 
