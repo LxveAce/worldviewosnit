@@ -1429,3 +1429,7 @@ curl -s "https://worldviewosint.com/api/ENDPOINT" -H "User-Agent: Mozilla/5.0" |
 # Count requests per domain
 cat captures/network.json | jq -r '.[].url' | awk -F/ '{print $3}' | sort | uniq -c | sort -rn
 ```
+
+## Legal & Ethical Disclaimer
+
+This framework is provided for **authorized security research and educational purposes only.** Only test, scan, intercept, or analyze systems that you own or for which you have explicit written permission. Unauthorized reconnaissance or interception of systems you do not own may violate computer-misuse, wiretap, and other laws. You are solely responsible for ensuring your use complies with all applicable laws and regulations. The author provides this software **as-is, with no warranty**, and accepts **no liability** for any misuse or damage.
