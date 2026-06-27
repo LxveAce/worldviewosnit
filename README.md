@@ -19,28 +19,6 @@ Your goal is to **capture, analyze, reconstruct, and classify** every observable
 
 ---
 
-<!-- STATUS-ROADMAP:START -->
-## Status & Roadmap
-
-**Status:** Mature, complete OSINT/security-recon dossier — the evidence archive (captures, logs, recon notes, and analysis reports) is finished and validates cleanly; methodology coverage is complete (all phases executed). Health: stabilizing.
-
-**In progress / known issues:**
-- Reproducibility hardening: the standalone Python recon scripts use hardcoded local paths and need to be made clone-relative so they run on any checkout.
-- No dependency manifest yet: a `requirements.txt` is needed for the third-party Python deps (e.g. `shodan`, plus its `SHODAN_API_KEY` env var).
-- Documentation drift: a few paths in the docs do not match the actual tree (the Playwright capture script is `scripts/browser_capture.js`).
-- Packaging hygiene: `package.json` needs `name`/`version` and a documented Playwright install so it does not rely on a globally installed copy.
-
-**Roadmap:**
-- Add a Python dependency manifest (`requirements.txt`/`pyproject`) listing every third-party dep actually imported, with an env-var reference.
-- Reconcile the docs with the real tree (correct script names; remove or create the listed-but-missing helper files).
-- Tidy `package.json` (add `name`/`version`, regenerate the lockfile) and document the two-step Playwright install.
-- Cross-link findings to the public `vibe-coding-website-security` playbook taxonomy as live case-study instances.
-- Add a short note clarifying the intended repo-name spelling (`worldviewosnit`) versus the target (`worldviewosint`).
-- Continue responsible-hardening framing: keep findings as vulnerability-class case studies and fixes rather than step-by-step recipes.
-<!-- STATUS-ROADMAP:END -->
-
----
-
 # ⚠️ Operating Principles
 
 - Operate autonomously — minimize manual intervention
