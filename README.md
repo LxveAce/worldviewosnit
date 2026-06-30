@@ -1,5 +1,7 @@
 # 🧠 Ultimate Web Intelligence & Reverse Engineering Lab
 
+> ⚠️ **Education & authorized, lawful use only.** Apply anything here only on systems you own or have explicit permission to test. Provided as-is, no warranty. See [DISCLAIMER.md](DISCLAIMER.md).
+
 ## 🎯 Mission
 
 Perform a full-spectrum technical, behavioral, and security analysis of:
